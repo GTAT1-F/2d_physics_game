@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cherry
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: New Layer 1
     uniqueID: 1391481161
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 3082077765
     locked: 0
   - name: Default
     uniqueID: 0

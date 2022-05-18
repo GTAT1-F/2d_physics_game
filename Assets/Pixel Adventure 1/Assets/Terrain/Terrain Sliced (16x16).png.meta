@@ -434,8 +434,440 @@ TextureImporter:
   - first:
       213: 4320056378629417345
     second: Terrain (16x16)_143
+  - first:
+      213: 2902273802658180415
+    second: Terrain Sliced (16x16)_0
+  - first:
+      213: -6150033036582198407
+    second: Terrain Sliced (16x16)_1
+  - first:
+      213: 5021068500436517841
+    second: Terrain Sliced (16x16)_2
+  - first:
+      213: 7452560645506918919
+    second: Terrain Sliced (16x16)_3
+  - first:
+      213: -1523456763730081660
+    second: Terrain Sliced (16x16)_4
+  - first:
+      213: -7892170592577072746
+    second: Terrain Sliced (16x16)_5
+  - first:
+      213: -4782553538942834977
+    second: Terrain Sliced (16x16)_6
+  - first:
+      213: 3925165532358984209
+    second: Terrain Sliced (16x16)_7
+  - first:
+      213: 5999578222934003670
+    second: Terrain Sliced (16x16)_8
+  - first:
+      213: 3320371760038065978
+    second: Terrain Sliced (16x16)_9
+  - first:
+      213: -3574895735335355282
+    second: Terrain Sliced (16x16)_10
+  - first:
+      213: -4669499228856403857
+    second: Terrain Sliced (16x16)_11
+  - first:
+      213: 5716825295704421368
+    second: Terrain Sliced (16x16)_12
+  - first:
+      213: -4552142719482407309
+    second: Terrain Sliced (16x16)_13
+  - first:
+      213: -7107133873430283805
+    second: Terrain Sliced (16x16)_14
+  - first:
+      213: 7169940465979160916
+    second: Terrain Sliced (16x16)_15
+  - first:
+      213: -7440051457103671695
+    second: Terrain Sliced (16x16)_16
+  - first:
+      213: 4467090498197927051
+    second: Terrain Sliced (16x16)_17
+  - first:
+      213: -7186697262807201019
+    second: Terrain Sliced (16x16)_18
+  - first:
+      213: 2126573664597023339
+    second: Terrain Sliced (16x16)_19
+  - first:
+      213: -2744604866611053843
+    second: Terrain Sliced (16x16)_20
+  - first:
+      213: -6704229216346816907
+    second: Terrain Sliced (16x16)_21
+  - first:
+      213: 7040740401427105950
+    second: Terrain Sliced (16x16)_22
+  - first:
+      213: 4803987686719627836
+    second: Terrain Sliced (16x16)_23
+  - first:
+      213: -5809228510748496589
+    second: Terrain Sliced (16x16)_24
+  - first:
+      213: 7878138426401487865
+    second: Terrain Sliced (16x16)_25
+  - first:
+      213: 1622654905497061536
+    second: Terrain Sliced (16x16)_26
+  - first:
+      213: 3866701048129057578
+    second: Terrain Sliced (16x16)_27
+  - first:
+      213: 5436956145924599635
+    second: Terrain Sliced (16x16)_28
+  - first:
+      213: -8185196207481930053
+    second: Terrain Sliced (16x16)_29
+  - first:
+      213: -5978227758274915419
+    second: Terrain Sliced (16x16)_30
+  - first:
+      213: -3726844052192366309
+    second: Terrain Sliced (16x16)_31
+  - first:
+      213: 6014041594372727830
+    second: Terrain Sliced (16x16)_32
+  - first:
+      213: -6153399637600640786
+    second: Terrain Sliced (16x16)_33
+  - first:
+      213: 7850876452835428796
+    second: Terrain Sliced (16x16)_34
+  - first:
+      213: -5632686409887027556
+    second: Terrain Sliced (16x16)_35
+  - first:
+      213: -1677492880468287587
+    second: Terrain Sliced (16x16)_36
+  - first:
+      213: 2755255159657979572
+    second: Terrain Sliced (16x16)_37
+  - first:
+      213: -6555962669166431313
+    second: Terrain Sliced (16x16)_38
+  - first:
+      213: 8496418937709825729
+    second: Terrain Sliced (16x16)_39
+  - first:
+      213: 7611417825057063656
+    second: Terrain Sliced (16x16)_40
+  - first:
+      213: 932416410304274468
+    second: Terrain Sliced (16x16)_41
+  - first:
+      213: -3104653398138783639
+    second: Terrain Sliced (16x16)_42
+  - first:
+      213: -2399930468311409242
+    second: Terrain Sliced (16x16)_43
+  - first:
+      213: -5876794703336190428
+    second: Terrain Sliced (16x16)_44
+  - first:
+      213: -7940845750058973481
+    second: Terrain Sliced (16x16)_45
+  - first:
+      213: 3055956325679830229
+    second: Terrain Sliced (16x16)_46
+  - first:
+      213: -5294283388359086134
+    second: Terrain Sliced (16x16)_47
+  - first:
+      213: 1148126818157445405
+    second: Terrain Sliced (16x16)_48
+  - first:
+      213: -7707774848039490712
+    second: Terrain Sliced (16x16)_49
+  - first:
+      213: 5092602125442828303
+    second: Terrain Sliced (16x16)_50
+  - first:
+      213: -129274384365622693
+    second: Terrain Sliced (16x16)_51
+  - first:
+      213: 7946256270314989614
+    second: Terrain Sliced (16x16)_52
+  - first:
+      213: -5960054110766830253
+    second: Terrain Sliced (16x16)_53
+  - first:
+      213: 6890068618988330050
+    second: Terrain Sliced (16x16)_54
+  - first:
+      213: -6189402959655295490
+    second: Terrain Sliced (16x16)_55
+  - first:
+      213: -5897045102619775901
+    second: Terrain Sliced (16x16)_56
+  - first:
+      213: 7979020265591117037
+    second: Terrain Sliced (16x16)_57
+  - first:
+      213: -3515048725455381280
+    second: Terrain Sliced (16x16)_58
+  - first:
+      213: -4657060171248818949
+    second: Terrain Sliced (16x16)_59
+  - first:
+      213: -3406550741011873913
+    second: Terrain Sliced (16x16)_60
+  - first:
+      213: 1047224608060278570
+    second: Terrain Sliced (16x16)_61
+  - first:
+      213: -2935998901810895314
+    second: Terrain Sliced (16x16)_62
+  - first:
+      213: -1520349868239849904
+    second: Terrain Sliced (16x16)_63
+  - first:
+      213: 6159360690136916673
+    second: Terrain Sliced (16x16)_64
+  - first:
+      213: 4940259601065374553
+    second: Terrain Sliced (16x16)_65
+  - first:
+      213: 2267142116904711172
+    second: Terrain Sliced (16x16)_66
+  - first:
+      213: -5354658925233994142
+    second: Terrain Sliced (16x16)_67
+  - first:
+      213: 754000179093939958
+    second: Terrain Sliced (16x16)_68
+  - first:
+      213: -951806941376393605
+    second: Terrain Sliced (16x16)_69
+  - first:
+      213: 602565233317184352
+    second: Terrain Sliced (16x16)_70
+  - first:
+      213: 1585496353899916297
+    second: Terrain Sliced (16x16)_71
+  - first:
+      213: -8001090831338918766
+    second: Terrain Sliced (16x16)_72
+  - first:
+      213: -8166057216685675774
+    second: Terrain Sliced (16x16)_73
+  - first:
+      213: 8259818757600442966
+    second: Terrain Sliced (16x16)_74
+  - first:
+      213: 5288882739650379491
+    second: Terrain Sliced (16x16)_75
+  - first:
+      213: -5753205145478194888
+    second: Terrain Sliced (16x16)_76
+  - first:
+      213: -6867572554444258182
+    second: Terrain Sliced (16x16)_77
+  - first:
+      213: -8158505108494717169
+    second: Terrain Sliced (16x16)_78
+  - first:
+      213: -1049226019396941020
+    second: Terrain Sliced (16x16)_79
+  - first:
+      213: -119081074771976983
+    second: Terrain Sliced (16x16)_80
+  - first:
+      213: -2389962291426223365
+    second: Terrain Sliced (16x16)_81
+  - first:
+      213: -4583147616382794264
+    second: Terrain Sliced (16x16)_82
+  - first:
+      213: 4071517252002933723
+    second: Terrain Sliced (16x16)_83
+  - first:
+      213: 616216867044081436
+    second: Terrain Sliced (16x16)_84
+  - first:
+      213: 1663890477860976835
+    second: Terrain Sliced (16x16)_85
+  - first:
+      213: -4967778771792927893
+    second: Terrain Sliced (16x16)_86
+  - first:
+      213: -7750482047274925513
+    second: Terrain Sliced (16x16)_87
+  - first:
+      213: -5528154000191010836
+    second: Terrain Sliced (16x16)_88
+  - first:
+      213: 8956028227566023672
+    second: Terrain Sliced (16x16)_89
+  - first:
+      213: -3843259800067296564
+    second: Terrain Sliced (16x16)_90
+  - first:
+      213: -7186463568601474912
+    second: Terrain Sliced (16x16)_91
+  - first:
+      213: -7297930431790078221
+    second: Terrain Sliced (16x16)_92
+  - first:
+      213: 3913395052427078262
+    second: Terrain Sliced (16x16)_93
+  - first:
+      213: 8683433444412030562
+    second: Terrain Sliced (16x16)_94
+  - first:
+      213: -4309571456439829745
+    second: Terrain Sliced (16x16)_95
+  - first:
+      213: -6944131665939194213
+    second: Terrain Sliced (16x16)_96
+  - first:
+      213: -993336646184493300
+    second: Terrain Sliced (16x16)_97
+  - first:
+      213: -2559238278499823807
+    second: Terrain Sliced (16x16)_98
+  - first:
+      213: -5966260982333671524
+    second: Terrain Sliced (16x16)_99
+  - first:
+      213: 3981212539099115471
+    second: Terrain Sliced (16x16)_100
+  - first:
+      213: -9188719593411773727
+    second: Terrain Sliced (16x16)_101
+  - first:
+      213: -356001123769039504
+    second: Terrain Sliced (16x16)_102
+  - first:
+      213: 8639778707392933759
+    second: Terrain Sliced (16x16)_103
+  - first:
+      213: -2448848189860875878
+    second: Terrain Sliced (16x16)_104
+  - first:
+      213: -1588334017198182579
+    second: Terrain Sliced (16x16)_105
+  - first:
+      213: -2877499046106404304
+    second: Terrain Sliced (16x16)_106
+  - first:
+      213: 816742201711421343
+    second: Terrain Sliced (16x16)_107
+  - first:
+      213: 8751896361266258078
+    second: Terrain Sliced (16x16)_108
+  - first:
+      213: 6703297672328271277
+    second: Terrain Sliced (16x16)_109
+  - first:
+      213: 8465317165198945509
+    second: Terrain Sliced (16x16)_110
+  - first:
+      213: 3348348675200897663
+    second: Terrain Sliced (16x16)_111
+  - first:
+      213: -8538501149817158768
+    second: Terrain Sliced (16x16)_112
+  - first:
+      213: -5711621488445660307
+    second: Terrain Sliced (16x16)_113
+  - first:
+      213: -4862145018235712340
+    second: Terrain Sliced (16x16)_114
+  - first:
+      213: -1821587738259982590
+    second: Terrain Sliced (16x16)_115
+  - first:
+      213: 8177655233620157279
+    second: Terrain Sliced (16x16)_116
+  - first:
+      213: 3519973246731882376
+    second: Terrain Sliced (16x16)_117
+  - first:
+      213: 902525005498473353
+    second: Terrain Sliced (16x16)_118
+  - first:
+      213: -7051467509170499978
+    second: Terrain Sliced (16x16)_119
+  - first:
+      213: 6533279997520759342
+    second: Terrain Sliced (16x16)_120
+  - first:
+      213: -2358511399047075428
+    second: Terrain Sliced (16x16)_121
+  - first:
+      213: 7329022666772186519
+    second: Terrain Sliced (16x16)_122
+  - first:
+      213: -3628254751460514816
+    second: Terrain Sliced (16x16)_123
+  - first:
+      213: 5747362120649924051
+    second: Terrain Sliced (16x16)_124
+  - first:
+      213: -5022048723515609751
+    second: Terrain Sliced (16x16)_125
+  - first:
+      213: -5728145629136226796
+    second: Terrain Sliced (16x16)_126
+  - first:
+      213: 612480059439069667
+    second: Terrain Sliced (16x16)_127
+  - first:
+      213: -2167002966568024001
+    second: Terrain Sliced (16x16)_128
+  - first:
+      213: 265309367955290906
+    second: Terrain Sliced (16x16)_129
+  - first:
+      213: -6514728287271593452
+    second: Terrain Sliced (16x16)_130
+  - first:
+      213: 5592807734871008063
+    second: Terrain Sliced (16x16)_131
+  - first:
+      213: 4943496712749525036
+    second: Terrain Sliced (16x16)_132
+  - first:
+      213: 5577559758858527025
+    second: Terrain Sliced (16x16)_133
+  - first:
+      213: -3173897939724825349
+    second: Terrain Sliced (16x16)_134
+  - first:
+      213: 7252638262014808286
+    second: Terrain Sliced (16x16)_135
+  - first:
+      213: 1872644753115356407
+    second: Terrain Sliced (16x16)_136
+  - first:
+      213: -8347369093276143272
+    second: Terrain Sliced (16x16)_137
+  - first:
+      213: -426067407094920494
+    second: Terrain Sliced (16x16)_138
+  - first:
+      213: 695276389285509736
+    second: Terrain Sliced (16x16)_139
+  - first:
+      213: 121552405696679771
+    second: Terrain Sliced (16x16)_140
+  - first:
+      213: -2946923001845503787
+    second: Terrain Sliced (16x16)_141
+  - first:
+      213: -4344652744860095212
+    second: Terrain Sliced (16x16)_142
+  - first:
+      213: 3969312238262035163
+    second: Terrain Sliced (16x16)_143
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -455,6 +887,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -464,8 +897,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -477,7 +910,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -486,9 +919,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -518,7 +955,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Terrain (16x16)_0
+      name: Terrain Sliced (16x16)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -532,14 +969,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8481e2313de930c45aa2009d31d2980f
-      internalID: -4874278423985981231
+      spriteID: f3dec5885a2f64820800000000000000
+      internalID: 2902273802658180415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_1
+      name: Terrain Sliced (16x16)_1
       rect:
         serializedVersion: 2
         x: 16
@@ -553,14 +990,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d6c8b4476055584f975ea7f14f1e5f4
-      internalID: 2492004042214043949
+      spriteID: 973e9999981b6aaa0800000000000000
+      internalID: -6150033036582198407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_2
+      name: Terrain Sliced (16x16)_2
       rect:
         serializedVersion: 2
         x: 32
@@ -574,14 +1011,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c00895fa81e7044e8f299f30912286e
-      internalID: 8471289998749917440
+      spriteID: 1d30c69c23b6ea540800000000000000
+      internalID: 5021068500436517841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_3
+      name: Terrain Sliced (16x16)_3
       rect:
         serializedVersion: 2
         x: 48
@@ -595,14 +1032,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cad5cf978afc0f440b41abc3a3c6f8af
-      internalID: 397718093594370940
+      spriteID: 70aee76fb60dc6760800000000000000
+      internalID: 7452560645506918919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_4
+      name: Terrain Sliced (16x16)_4
       rect:
         serializedVersion: 2
         x: 64
@@ -616,14 +1053,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc0eb9fc060cd5e458cde896ed3d07c1
-      internalID: 4716054802376701170
+      spriteID: 488c33f15289bdae0800000000000000
+      internalID: -1523456763730081660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_5
+      name: Terrain Sliced (16x16)_5
       rect:
         serializedVersion: 2
         x: 96
@@ -637,14 +1074,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51bb81c75e50e7547b576987e6264c23
-      internalID: -8620202154233844528
+      spriteID: 691d8aa19a0697290800000000000000
+      internalID: -7892170592577072746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_6
+      name: Terrain Sliced (16x16)_6
       rect:
         serializedVersion: 2
         x: 112
@@ -658,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69379e33ee33124889ad19c6f4ca56a
-      internalID: -7517053698926566003
+      spriteID: fd6660835e4f0adb0800000000000000
+      internalID: -4782553538942834977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_7
+      name: Terrain Sliced (16x16)_7
       rect:
         serializedVersion: 2
         x: 128
@@ -679,14 +1116,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 811b137a2a0d40946be35aad29382f91
-      internalID: 3020870990670601969
+      spriteID: 1124dd8514df87630800000000000000
+      internalID: 3925165532358984209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_8
+      name: Terrain Sliced (16x16)_8
       rect:
         serializedVersion: 2
         x: 144
@@ -700,14 +1137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7c3c9dcbebb0604298cd4e4676d1234
-      internalID: 1685935324672158413
+      spriteID: 6df862c4b98c24350800000000000000
+      internalID: 5999578222934003670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_9
+      name: Terrain Sliced (16x16)_9
       rect:
         serializedVersion: 2
         x: 160
@@ -721,14 +1158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f463a3eecd1ddb4e86dacb4a1c18496
-      internalID: 8022139226935704013
+      spriteID: a37be4f0684541e20800000000000000
+      internalID: 3320371760038065978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_10
+      name: Terrain Sliced (16x16)_10
       rect:
         serializedVersion: 2
         x: 192
@@ -742,14 +1179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20fd0a1302b7dd4eaf4aa847256ae2d
-      internalID: 5587568460378422633
+      spriteID: e6cf642f44b636ec0800000000000000
+      internalID: -3574895735335355282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_11
+      name: Terrain Sliced (16x16)_11
       rect:
         serializedVersion: 2
         x: 208
@@ -763,14 +1200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fcf75d879fe7494b8c7f425e7cf832f
-      internalID: 4987498479824627636
+      spriteID: f68bd01013b923fb0800000000000000
+      internalID: -4669499228856403857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_12
+      name: Terrain Sliced (16x16)_12
       rect:
         serializedVersion: 2
         x: 224
@@ -784,14 +1221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 343c8d5386d77dc4081a6c2a5834181b
-      internalID: 6480251376165907240
+      spriteID: 8f3fd61415e365f40800000000000000
+      internalID: 5716825295704421368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_13
+      name: Terrain Sliced (16x16)_13
       rect:
         serializedVersion: 2
         x: 240
@@ -805,14 +1242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e85939cbaf5a64aba7e510aadd49f3
-      internalID: -8795747966950415410
+      spriteID: 376de5e905a83d0c0800000000000000
+      internalID: -4552142719482407309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_14
+      name: Terrain Sliced (16x16)_14
       rect:
         serializedVersion: 2
         x: 272
@@ -826,14 +1263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f5cd4fa688e4e4589ebb1e0300b92a
-      internalID: -6278356596846833739
+      spriteID: 3e9ba07b5636e5d90800000000000000
+      internalID: -7107133873430283805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_15
+      name: Terrain Sliced (16x16)_15
       rect:
         serializedVersion: 2
         x: 288
@@ -847,14 +1284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9304e930d38465643a5f8e9c4060ef99
-      internalID: -7850267199778421155
+      spriteID: 459f267addeb08360800000000000000
+      internalID: 7169940465979160916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_16
+      name: Terrain Sliced (16x16)_16
       rect:
         serializedVersion: 2
         x: 304
@@ -868,14 +1305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43384c809529cf846908d04c497d7513
-      internalID: 8102182086558406705
+      spriteID: 17e45bc6e90afb890800000000000000
+      internalID: -7440051457103671695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_17
+      name: Terrain Sliced (16x16)_17
       rect:
         serializedVersion: 2
         x: 0
@@ -889,14 +1326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 355013bdadeb13f459de732acd152366
-      internalID: 6918280329820428914
+      spriteID: b843c94f32b4efd30800000000000000
+      internalID: 4467090498197927051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_18
+      name: Terrain Sliced (16x16)_18
       rect:
         serializedVersion: 2
         x: 16
@@ -910,14 +1347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe714777fdc93c499eb58b044898ec7
-      internalID: -3946849515626757761
+      spriteID: 50bca1e8ae8b34c90800000000000000
+      internalID: -7186697262807201019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_19
+      name: Terrain Sliced (16x16)_19
       rect:
         serializedVersion: 2
         x: 32
@@ -931,14 +1368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85bc0576359144f4683dc352004ffd51
-      internalID: -2698208165065819517
+      spriteID: b6a910b1b7b138d10800000000000000
+      internalID: 2126573664597023339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_20
+      name: Terrain Sliced (16x16)_20
       rect:
         serializedVersion: 2
         x: 48
@@ -952,14 +1389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80c04266d5a08db4b82e4e03fcf53c55
-      internalID: -5448943668070679941
+      spriteID: deaf6d45a6439e9d0800000000000000
+      internalID: -2744604866611053843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_21
+      name: Terrain Sliced (16x16)_21
       rect:
         serializedVersion: 2
         x: 64
@@ -973,14 +1410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3465f6336964aaf4a96c9d7f0be787c3
-      internalID: -2572975058836569894
+      spriteID: 57e3ada5c0bc5f2a0800000000000000
+      internalID: -6704229216346816907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_22
+      name: Terrain Sliced (16x16)_22
       rect:
         serializedVersion: 2
         x: 96
@@ -994,14 +1431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b1e49eefe1a745469d7d17c6e5deb03
-      internalID: 5714336816974921154
+      spriteID: e98cdc6771cb5b160800000000000000
+      internalID: 7040740401427105950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_23
+      name: Terrain Sliced (16x16)_23
       rect:
         serializedVersion: 2
         x: 112
@@ -1015,14 +1452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc9fe3fe906f2f84098e5e26860415b8
-      internalID: 8704577166008928185
+      spriteID: c32264439513ba240800000000000000
+      internalID: 4803987686719627836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_24
+      name: Terrain Sliced (16x16)_24
       rect:
         serializedVersion: 2
         x: 128
@@ -1036,14 +1473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51798fdf0d06a334ca041f5a0dec101a
-      internalID: 313651839404696180
+      spriteID: 33da3c5b279716fa0800000000000000
+      internalID: -5809228510748496589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_25
+      name: Terrain Sliced (16x16)_25
       rect:
         serializedVersion: 2
         x: 144
@@ -1057,14 +1494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beab88b6a3e7b1a408ddc3ac65b26fb4
-      internalID: -1968872540364177098
+      spriteID: 9fbf30d9825c45d60800000000000000
+      internalID: 7878138426401487865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_26
+      name: Terrain Sliced (16x16)_26
       rect:
         serializedVersion: 2
         x: 160
@@ -1078,14 +1515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a9ff440b8beba948baa530b116c1288
-      internalID: -6401146908380638247
+      spriteID: 0a882331a04d48610800000000000000
+      internalID: 1622654905497061536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_27
+      name: Terrain Sliced (16x16)_27
       rect:
         serializedVersion: 2
         x: 192
@@ -1099,14 +1536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70565ce6a2417904dbda04cfdf55f5c6
-      internalID: -3271834841568197018
+      spriteID: a23fc5add1849a530800000000000000
+      internalID: 3866701048129057578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_28
+      name: Terrain Sliced (16x16)_28
       rect:
         serializedVersion: 2
         x: 208
@@ -1120,14 +1557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85188324e67f2264e87c1aedc9f5067d
-      internalID: -3097802831490656063
+      spriteID: 35f6639fec2f37b40800000000000000
+      internalID: 5436956145924599635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_29
+      name: Terrain Sliced (16x16)_29
       rect:
         serializedVersion: 2
         x: 224
@@ -1141,14 +1578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c56f44b0660827648b300661b10edb2b
-      internalID: -8182233202742861025
+      spriteID: bbe3a249a67586e80800000000000000
+      internalID: -8185196207481930053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_30
+      name: Terrain Sliced (16x16)_30
       rect:
         serializedVersion: 2
         x: 240
@@ -1162,14 +1599,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500464aa9eed2024fa75a42158ee8b16
-      internalID: -1730604581034617779
+      spriteID: 5a3d4a12781190da0800000000000000
+      internalID: -5978227758274915419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_31
+      name: Terrain Sliced (16x16)_31
       rect:
         serializedVersion: 2
         x: 272
@@ -1183,14 +1620,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a37377961e6f234f80fe19d60525cb7
-      internalID: -1491035274662818768
+      spriteID: b11fbc78417974cc0800000000000000
+      internalID: -3726844052192366309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_32
+      name: Terrain Sliced (16x16)_32
       rect:
         serializedVersion: 2
         x: 288
@@ -1204,14 +1641,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8d41b41f457773478f418102bc35e63
-      internalID: -223391217462372170
+      spriteID: 614a20167fa267350800000000000000
+      internalID: 6014041594372727830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_33
+      name: Terrain Sliced (16x16)_33
       rect:
         serializedVersion: 2
         x: 304
@@ -1225,14 +1662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8047a77454920674883298e854a0947a
-      internalID: 611065533247025525
+      spriteID: ee0ebc7b1abba9aa0800000000000000
+      internalID: -6153399637600640786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_34
+      name: Terrain Sliced (16x16)_34
       rect:
         serializedVersion: 2
         x: 0
@@ -1246,14 +1683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aee6b961f4a6d34da21f2b3436527e0
-      internalID: 4356392584696007802
+      spriteID: cb90cb2c98ae3fc60800000000000000
+      internalID: 7850876452835428796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_35
+      name: Terrain Sliced (16x16)_35
       rect:
         serializedVersion: 2
         x: 16
@@ -1267,14 +1704,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17157eddf6f8e8540a0278fb484c94cc
-      internalID: -8565927180804605051
+      spriteID: c9e638fad8da4d1b0800000000000000
+      internalID: -5632686409887027556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_36
+      name: Terrain Sliced (16x16)_36
       rect:
         serializedVersion: 2
         x: 32
@@ -1288,14 +1725,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e5bfc56596012a4298d0bcb19c849e5
-      internalID: -7788903373117692988
+      spriteID: d9fd07aec1958b8e0800000000000000
+      internalID: -1677492880468287587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_37
+      name: Terrain Sliced (16x16)_37
       rect:
         serializedVersion: 2
         x: 96
@@ -1309,14 +1746,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d2df4356cd9574cb63108658393192
-      internalID: 1918823624152674874
+      spriteID: 4bed9f048f1ac3620800000000000000
+      internalID: 2755255159657979572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_38
+      name: Terrain Sliced (16x16)_38
       rect:
         serializedVersion: 2
         x: 112
@@ -1330,14 +1767,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e976cbd054bf2b14881da04c65421304
-      internalID: 965125185638226396
+      spriteID: fa3fc97ffaa8405a0800000000000000
+      internalID: -6555962669166431313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_39
+      name: Terrain Sliced (16x16)_39
       rect:
         serializedVersion: 2
         x: 128
@@ -1351,14 +1788,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbe26bb169929a49a33568e6a6bf93c
-      internalID: 3631698497521491291
+      spriteID: 1ce8815020859e570800000000000000
+      internalID: 8496418937709825729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_40
+      name: Terrain Sliced (16x16)_40
       rect:
         serializedVersion: 2
         x: 208
@@ -1372,14 +1809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032e7fd0be30b524b8e701a6dd627087
-      internalID: -1385159882611531606
+      spriteID: 8e24a935f2031a960800000000000000
+      internalID: 7611417825057063656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_41
+      name: Terrain Sliced (16x16)_41
       rect:
         serializedVersion: 2
         x: 224
@@ -1393,14 +1830,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96a0ce093de1a8241a46add302b6fa47
-      internalID: 6882983052497979040
+      spriteID: 4206ee6f8cb90fc00800000000000000
+      internalID: 932416410304274468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_42
+      name: Terrain Sliced (16x16)_42
       rect:
         serializedVersion: 2
         x: 240
@@ -1414,14 +1851,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f202ea0712260d14f9cb1b6464322c47
-      internalID: 5620700161029325194
+      spriteID: 9687a3dfe2e0ae4d0800000000000000
+      internalID: -3104653398138783639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_43
+      name: Terrain Sliced (16x16)_43
       rect:
         serializedVersion: 2
         x: 272
@@ -1435,14 +1872,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e155efab9d406948922fee4a0ba777d
-      internalID: 4373040517201769238
+      spriteID: 6ad59a654fbb1bed0800000000000000
+      internalID: -2399930468311409242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_44
+      name: Terrain Sliced (16x16)_44
       rect:
         serializedVersion: 2
         x: 288
@@ -1456,14 +1893,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7598267a7bf5f364fbfc359cc2a4632e
-      internalID: -6530495296205248430
+      spriteID: 42ecfb99a5e617ea0800000000000000
+      internalID: -5876794703336190428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_45
+      name: Terrain Sliced (16x16)_45
       rect:
         serializedVersion: 2
         x: 304
@@ -1477,14 +1914,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c1499e5db5d65640801912a2be4e3e2
-      internalID: 2248595124770686365
+      spriteID: 7d6809bdcd27cc190800000000000000
+      internalID: -7940845750058973481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_46
+      name: Terrain Sliced (16x16)_46
       rect:
         serializedVersion: 2
         x: 0
@@ -1498,14 +1935,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c295eefb958b0b842aa438f68690dddc
-      internalID: 59160463414151494
+      spriteID: 5d411494610f86a20800000000000000
+      internalID: 3055956325679830229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_47
+      name: Terrain Sliced (16x16)_47
       rect:
         serializedVersion: 2
         x: 16
@@ -1519,14 +1956,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191eb46a76d3a8d40a47dbd6e8c46ba0
-      internalID: 7769017978755655707
+      spriteID: acfea900f4de686b0800000000000000
+      internalID: -5294283388359086134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_48
+      name: Terrain Sliced (16x16)_48
       rect:
         serializedVersion: 2
         x: 32
@@ -1540,14 +1977,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd73bf53f445bf442bf478fbd98213ce
-      internalID: 4651539075410445323
+      spriteID: d11cf511247feef00800000000000000
+      internalID: 1148126818157445405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_49
+      name: Terrain Sliced (16x16)_49
       rect:
         serializedVersion: 2
         x: 48
@@ -1561,14 +1998,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8c634f53a68df24ea8e612f8dd1052d
-      internalID: 2934133866269456315
+      spriteID: 86b6aedfc9b780590800000000000000
+      internalID: -7707774848039490712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_50
+      name: Terrain Sliced (16x16)_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1582,14 +2019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bad0c40997e4334fb86372b64e0d2e5
-      internalID: 1034891850837087948
+      spriteID: f084b6db6ae8ca640800000000000000
+      internalID: 5092602125442828303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_51
+      name: Terrain Sliced (16x16)_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1603,14 +2040,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b9b918b69ab67945acd0144de1c2b65
-      internalID: -4533138595082870998
+      spriteID: b5a6451e1a9b43ef0800000000000000
+      internalID: -129274384365622693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_52
+      name: Terrain Sliced (16x16)_52
       rect:
         serializedVersion: 2
         x: 112
@@ -1624,14 +2061,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0025ba124639b8544a924de23cfa1e11
-      internalID: 3702685922149842701
+      spriteID: e28685e0af5c64e60800000000000000
+      internalID: 7946256270314989614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_53
+      name: Terrain Sliced (16x16)_53
       rect:
         serializedVersion: 2
         x: 128
@@ -1645,14 +2082,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff9782ca5f9055469d4864509607e8b
-      internalID: 510484679990689147
+      spriteID: 35de2ad2d52a94da0800000000000000
+      internalID: -5960054110766830253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_54
+      name: Terrain Sliced (16x16)_54
       rect:
         serializedVersion: 2
         x: 144
@@ -1666,14 +2103,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50bb9df0a366b1540a51ed4a2e1691be
-      internalID: 3718556811081376101
+      spriteID: 24c9dd067e07e9f50800000000000000
+      internalID: 6890068618988330050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_55
+      name: Terrain Sliced (16x16)_55
       rect:
         serializedVersion: 2
         x: 160
@@ -1687,14 +2124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af2076ef0c5587d4ebde396f90f2b82c
-      internalID: -5869233480101591377
+      spriteID: ef5aef11dc2da1aa0800000000000000
+      internalID: -6189402959655295490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_56
+      name: Terrain Sliced (16x16)_56
       rect:
         serializedVersion: 2
         x: 192
@@ -1708,14 +2145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27892bbe77b3e194ab2fbb579b4a4728
-      internalID: -2615569002567638836
+      spriteID: 36c24e919bc792ea0800000000000000
+      internalID: -5897045102619775901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_57
+      name: Terrain Sliced (16x16)_57
       rect:
         serializedVersion: 2
         x: 208
@@ -1729,14 +2166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a2258d1232c4a4badddaec30b4150a
-      internalID: 772467259971446145
+      spriteID: de4933a28ac2bbe60800000000000000
+      internalID: 7979020265591117037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_58
+      name: Terrain Sliced (16x16)_58
       rect:
         serializedVersion: 2
         x: 224
@@ -1750,14 +2187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b25fecb52726724f81aa060dee0e29f
-      internalID: -39983623799505075
+      spriteID: 0ecda07cec9083fc0800000000000000
+      internalID: -3515048725455381280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_59
+      name: Terrain Sliced (16x16)_59
       rect:
         serializedVersion: 2
         x: 240
@@ -1771,14 +2208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72bf3401dafd7414d94bed5773664475
-      internalID: 6999343348047764492
+      spriteID: bf4281bc27cce5fb0800000000000000
+      internalID: -4657060171248818949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_60
+      name: Terrain Sliced (16x16)_60
       rect:
         serializedVersion: 2
         x: 272
@@ -1792,14 +2229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 273ff7ed94fbc7e41bf3253b333e3529
-      internalID: -6933530849576539303
+      spriteID: 78fb4a4562089b0d0800000000000000
+      internalID: -3406550741011873913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_61
+      name: Terrain Sliced (16x16)_61
       rect:
         serializedVersion: 2
         x: 288
@@ -1813,14 +2250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36060a763959d474e9d505099890cf97
-      internalID: -8849650766351124748
+      spriteID: a270b7b8b3d788e00800000000000000
+      internalID: 1047224608060278570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_62
+      name: Terrain Sliced (16x16)_62
       rect:
         serializedVersion: 2
         x: 304
@@ -1834,14 +2271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9526e8ad2a7f5ba4b8191682fa26a423
-      internalID: 5344191953466923600
+      spriteID: e26ef9ced8c3147d0800000000000000
+      internalID: -2935998901810895314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_63
+      name: Terrain Sliced (16x16)_63
       rect:
         serializedVersion: 2
         x: 320
@@ -1855,14 +2292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d5bde5f612c0e498dbd7c5c3d1fac8
-      internalID: 2110485755423906440
+      spriteID: 056704999d1a6eae0800000000000000
+      internalID: -1520349868239849904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_64
+      name: Terrain Sliced (16x16)_64
       rect:
         serializedVersion: 2
         x: 336
@@ -1876,14 +2313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1d8bfffefdefb42affecc349b0eedd
-      internalID: 611278257802682203
+      spriteID: 1c2ad1bf9e17a7550800000000000000
+      internalID: 6159360690136916673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_65
+      name: Terrain Sliced (16x16)_65
       rect:
         serializedVersion: 2
         x: 0
@@ -1897,14 +2334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4bd6f8f9d85da44a888e60e0fa829f9
-      internalID: 8568688612705805593
+      spriteID: 953f6bbbee35f8440800000000000000
+      internalID: 4940259601065374553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_66
+      name: Terrain Sliced (16x16)_66
       rect:
         serializedVersion: 2
         x: 16
@@ -1918,14 +2355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af4186cd12344514686fa1cc177a9d65
-      internalID: -4293226751833479062
+      spriteID: 404be655eb1867f10800000000000000
+      internalID: 2267142116904711172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_67
+      name: Terrain Sliced (16x16)_67
       rect:
         serializedVersion: 2
         x: 32
@@ -1939,14 +2376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cb23d08ac44144087432f86086aea9
-      internalID: -531863552409210314
+      spriteID: 2668d04e31e60b5b0800000000000000
+      internalID: -5354658925233994142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_68
+      name: Terrain Sliced (16x16)_68
       rect:
         serializedVersion: 2
         x: 48
@@ -1960,14 +2397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9a911d8e577554cb61ee54c6a719bc
-      internalID: 3220740477721170248
+      spriteID: 6f6a9730b2fb67a00800000000000000
+      internalID: 754000179093939958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_69
+      name: Terrain Sliced (16x16)_69
       rect:
         serializedVersion: 2
         x: 64
@@ -1981,14 +2418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a8fcc1e7bcb794c8b1e2bc77f96e5c
-      internalID: -8232957222563989430
+      spriteID: b7e428431a08ac2f0800000000000000
+      internalID: -951806941376393605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_70
+      name: Terrain Sliced (16x16)_70
       rect:
         serializedVersion: 2
         x: 96
@@ -2002,14 +2439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb26acfd9a13e994abba9513f96b0380
-      internalID: 3581976363580684779
+      spriteID: 0630fdd13edbc5800800000000000000
+      internalID: 602565233317184352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_71
+      name: Terrain Sliced (16x16)_71
       rect:
         serializedVersion: 2
         x: 112
@@ -2023,14 +2460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e62a0d3ac1361fd48bc7fb1ab0b251bd
-      internalID: 8137121077619138534
+      spriteID: 90ca1e69880d00610800000000000000
+      internalID: 1585496353899916297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_72
+      name: Terrain Sliced (16x16)_72
       rect:
         serializedVersion: 2
         x: 128
@@ -2044,14 +2481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 968a065b4f393a749bcd3759655b20bb
-      internalID: -4450007684230045513
+      spriteID: 29ca86ec74a66f090800000000000000
+      internalID: -8001090831338918766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_73
+      name: Terrain Sliced (16x16)_73
       rect:
         serializedVersion: 2
         x: 144
@@ -2065,14 +2502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2606a16fe2bcebb49ab7ec35db8bbabf
-      internalID: 368488948622713827
+      spriteID: 20b6fef1a365cae80800000000000000
+      internalID: -8166057216685675774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_74
+      name: Terrain Sliced (16x16)_74
       rect:
         serializedVersion: 2
         x: 160
@@ -2086,14 +2523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75fe74b76f5ccb244b164b462770922b
-      internalID: -1652666043038260038
+      spriteID: 65af1ebc565c0a270800000000000000
+      internalID: 8259818757600442966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_75
+      name: Terrain Sliced (16x16)_75
       rect:
         serializedVersion: 2
         x: 192
@@ -2107,14 +2544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95db90a63dc628149a74ad63c9dd9191
-      internalID: -3581127029532586042
+      spriteID: 3ee3e8b74d2e56940800000000000000
+      internalID: 5288882739650379491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_76
+      name: Terrain Sliced (16x16)_76
       rect:
         serializedVersion: 2
         x: 208
@@ -2128,14 +2565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 679c916f31f83684583cda7806ee2957
-      internalID: -1130122408560378385
+      spriteID: 83992d7e6628820b0800000000000000
+      internalID: -5753205145478194888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_77
+      name: Terrain Sliced (16x16)_77
       rect:
         serializedVersion: 2
         x: 224
@@ -2149,14 +2586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b338235731b65fa4eb178060c4a7e567
-      internalID: 1383883272258276261
+      spriteID: a74c02fc52b71b0a0800000000000000
+      internalID: -6867572554444258182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_78
+      name: Terrain Sliced (16x16)_78
       rect:
         serializedVersion: 2
         x: 240
@@ -2170,14 +2607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf43c2c0bb2668d49bbc835e9347e5e6
-      internalID: -5125620877619029284
+      spriteID: f0f66f554da27ce80800000000000000
+      internalID: -8158505108494717169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_79
+      name: Terrain Sliced (16x16)_79
       rect:
         serializedVersion: 2
         x: 272
@@ -2191,14 +2628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c5e283c9e4f22439ed67b3a3944830
-      internalID: -7056944154279210060
+      spriteID: 42b8fb09e766071f0800000000000000
+      internalID: -1049226019396941020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_80
+      name: Terrain Sliced (16x16)_80
       rect:
         serializedVersion: 2
         x: 288
@@ -2212,14 +2649,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f367b08925e10f448b6f78877aa7380
-      internalID: -9178860142635623461
+      spriteID: 9ec9eb6b460f85ef0800000000000000
+      internalID: -119081074771976983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_81
+      name: Terrain Sliced (16x16)_81
       rect:
         serializedVersion: 2
         x: 304
@@ -2233,14 +2670,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7562b34a86122454ab6ea298ba8bb952
-      internalID: -5377211804188701585
+      spriteID: bfa16f065f525ded0800000000000000
+      internalID: -2389962291426223365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_82
+      name: Terrain Sliced (16x16)_82
       rect:
         serializedVersion: 2
         x: 320
@@ -2254,14 +2691,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7172168266d54b249881825f839d6962
-      internalID: -3332869691567337552
+      spriteID: 8e5435486836560c0800000000000000
+      internalID: -4583147616382794264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_83
+      name: Terrain Sliced (16x16)_83
       rect:
         serializedVersion: 2
         x: 336
@@ -2275,14 +2712,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33d1cdbb5a4547f4f859f22961749e8a
-      internalID: -7839824748867068813
+      spriteID: bdb628e6e5fe08830800000000000000
+      internalID: 4071517252002933723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_84
+      name: Terrain Sliced (16x16)_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2296,14 +2733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c386c6604b2741f4685abfb682801089
-      internalID: 4860222720029096845
+      spriteID: c1f34c8c9fd3d8800800000000000000
+      internalID: 616216867044081436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_85
+      name: Terrain Sliced (16x16)_85
       rect:
         serializedVersion: 2
         x: 16
@@ -2317,14 +2754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caaf04e65fbadf3409beaaeac1786fba
-      internalID: -8908544382962373700
+      spriteID: 3c8fe0ee293571710800000000000000
+      internalID: 1663890477860976835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_86
+      name: Terrain Sliced (16x16)_86
       rect:
         serializedVersion: 2
         x: 32
@@ -2338,14 +2775,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cd383c0043368249ad51fcf64369d69
-      internalID: 2534797647697017659
+      spriteID: b636e880787ee0bb0800000000000000
+      internalID: -4967778771792927893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_87
+      name: Terrain Sliced (16x16)_87
       rect:
         serializedVersion: 2
         x: 96
@@ -2359,14 +2796,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1194506ddbecab419d7a046bb33aea7
-      internalID: -701145450088738326
+      spriteID: 732c22e44a1c07490800000000000000
+      internalID: -7750482047274925513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_88
+      name: Terrain Sliced (16x16)_88
       rect:
         serializedVersion: 2
         x: 112
@@ -2380,14 +2817,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f149d38622090459453d8d60198698
-      internalID: -7280874316543817821
+      spriteID: ce7c5fae93d0843b0800000000000000
+      internalID: -5528154000191010836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_89
+      name: Terrain Sliced (16x16)_89
       rect:
         serializedVersion: 2
         x: 128
@@ -2401,14 +2838,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0dc1f507a7cea14bb63576bda451906
-      internalID: 7816257180041521445
+      spriteID: 8f3b17ec8343a4c70800000000000000
+      internalID: 8956028227566023672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_90
+      name: Terrain Sliced (16x16)_90
       rect:
         serializedVersion: 2
         x: 208
@@ -2422,14 +2859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3728dd0923880344981705e67e16f1db
-      internalID: 4218957088357342075
+      spriteID: cc23375039ff9aac0800000000000000
+      internalID: -3843259800067296564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_91
+      name: Terrain Sliced (16x16)_91
       rect:
         serializedVersion: 2
         x: 224
@@ -2443,14 +2880,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f8586d5bed04424ca97fcc24a1d8122
-      internalID: -1647121858502193189
+      spriteID: 0a8193ab57d844c90800000000000000
+      internalID: -7186463568601474912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_92
+      name: Terrain Sliced (16x16)_92
       rect:
         serializedVersion: 2
         x: 240
@@ -2464,14 +2901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 636529c284f7f41498a1fe0c538a6318
-      internalID: 3045001923454373135
+      spriteID: 3f6a3a930fa88ba90800000000000000
+      internalID: -7297930431790078221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_93
+      name: Terrain Sliced (16x16)_93
       rect:
         serializedVersion: 2
         x: 272
@@ -2485,14 +2922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7ee618bc5dec1f49873c426e73a25e3
-      internalID: 6046465229504819404
+      spriteID: 67aefade01c2f4630800000000000000
+      internalID: 3913395052427078262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_94
+      name: Terrain Sliced (16x16)_94
       rect:
         serializedVersion: 2
         x: 288
@@ -2506,14 +2943,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f942ad0d4f86f24984ab837e03f1a36
-      internalID: 146925484895311433
+      spriteID: 26efcecf5b0c18870800000000000000
+      internalID: 8683433444412030562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_95
+      name: Terrain Sliced (16x16)_95
       rect:
         serializedVersion: 2
         x: 304
@@ -2527,14 +2964,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0284523f1a693094e8db342b82e9c6a4
-      internalID: 3895720443503238059
+      spriteID: f0bbdbce7935134c0800000000000000
+      internalID: -4309571456439829745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_96
+      name: Terrain Sliced (16x16)_96
       rect:
         serializedVersion: 2
         x: 0
@@ -2548,14 +2985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0986600f7152c854d9c5b8ec9a67f697
-      internalID: -9019234469899804686
+      spriteID: b9e172a9a0d71af90800000000000000
+      internalID: -6944131665939194213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_97
+      name: Terrain Sliced (16x16)_97
       rect:
         serializedVersion: 2
         x: 16
@@ -2569,14 +3006,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 767660f4d39ac2c49b0745a199770ac4
-      internalID: 3666724916130892037
+      spriteID: c0f9bcd4595f632f0800000000000000
+      internalID: -993336646184493300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_98
+      name: Terrain Sliced (16x16)_98
       rect:
         serializedVersion: 2
         x: 32
@@ -2590,14 +3027,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc23e70afd0abab4b9d9c8f59daa61a3
-      internalID: 4557074923728586563
+      spriteID: 14f8f6a5852cb7cd0800000000000000
+      internalID: -2559238278499823807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_99
+      name: Terrain Sliced (16x16)_99
       rect:
         serializedVersion: 2
         x: 48
@@ -2611,14 +3048,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70dcf51d5b09dec489b0249fa626ee40
-      internalID: -4531858634233595940
+      spriteID: c977ab64f35933da0800000000000000
+      internalID: -5966260982333671524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_100
+      name: Terrain Sliced (16x16)_100
       rect:
         serializedVersion: 2
         x: 64
@@ -2632,14 +3069,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e9d3453476e4e42a839fa72b48f4df
-      internalID: -9185552814043747542
+      spriteID: fcf655006bb104730800000000000000
+      internalID: 3981212539099115471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_101
+      name: Terrain Sliced (16x16)_101
       rect:
         serializedVersion: 2
         x: 96
@@ -2653,14 +3090,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63bd99089e09a56419ae911285c745b2
-      internalID: -8204820221692255543
+      spriteID: 1eaf406b63c1b7080800000000000000
+      internalID: -9188719593411773727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_102
+      name: Terrain Sliced (16x16)_102
       rect:
         serializedVersion: 2
         x: 112
@@ -2674,14 +3111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54178813c0a1db34da4f1c0917b14c64
-      internalID: -6233458931719022677
+      spriteID: 0754b163dda3f0bf0800000000000000
+      internalID: -356001123769039504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_103
+      name: Terrain Sliced (16x16)_103
       rect:
         serializedVersion: 2
         x: 128
@@ -2695,14 +3132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e636d67c26cb1e4a9db133cf0dd8a11
-      internalID: 1154340479819735195
+      spriteID: f7fa32875f8a6e770800000000000000
+      internalID: 8639778707392933759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_104
+      name: Terrain Sliced (16x16)_104
       rect:
         serializedVersion: 2
         x: 144
@@ -2716,14 +3153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a02f1add9ec27140b74ba0f631e9e02
-      internalID: 4778045797586685428
+      spriteID: a91fb7ebb81f30ed0800000000000000
+      internalID: -2448848189860875878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_105
+      name: Terrain Sliced (16x16)_105
       rect:
         serializedVersion: 2
         x: 160
@@ -2737,14 +3174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b04eac3296b9d42bfef712fcda2af9
-      internalID: 6636356914981313421
+      spriteID: d4fab3070aa15f9e0800000000000000
+      internalID: -1588334017198182579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_106
+      name: Terrain Sliced (16x16)_106
       rect:
         serializedVersion: 2
         x: 192
@@ -2758,14 +3195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97a04a509b34e654ababa5e8437e2d3a
-      internalID: 1686551188809007541
+      spriteID: 03a6d4bfcd11118d0800000000000000
+      internalID: -2877499046106404304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_107
+      name: Terrain Sliced (16x16)_107
       rect:
         serializedVersion: 2
         x: 208
@@ -2779,14 +3216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6061d273c2aefca48abfdd162a718110
-      internalID: -5930776587842900371
+      spriteID: f97641684b6a55b00800000000000000
+      internalID: 816742201711421343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_108
+      name: Terrain Sliced (16x16)_108
       rect:
         serializedVersion: 2
         x: 224
@@ -2800,14 +3237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ec2f3137f6b69046a3b65482e0d7a90
-      internalID: -130104546997218819
+      spriteID: e902f4cfe5bf47970800000000000000
+      internalID: 8751896361266258078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_109
+      name: Terrain Sliced (16x16)_109
       rect:
         serializedVersion: 2
         x: 240
@@ -2821,14 +3258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e102fb079ded5ad4cb1f9941ea1be288
-      internalID: -557614441817400054
+      spriteID: da554d6a7b5e60d50800000000000000
+      internalID: 6703297672328271277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_110
+      name: Terrain Sliced (16x16)_110
       rect:
         serializedVersion: 2
         x: 272
@@ -2842,14 +3279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75a8a2c8a4decd428e6165d36539d18
-      internalID: -4356087948441045522
+      spriteID: 5ec23be4c19da7570800000000000000
+      internalID: 8465317165198945509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_111
+      name: Terrain Sliced (16x16)_111
       rect:
         serializedVersion: 2
         x: 288
@@ -2863,14 +3300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4b32f9b33e85374f83ebd7948b85d8f
-      internalID: 2379953761323448013
+      spriteID: f72df793169b77e20800000000000000
+      internalID: 3348348675200897663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_112
+      name: Terrain Sliced (16x16)_112
       rect:
         serializedVersion: 2
         x: 304
@@ -2884,14 +3321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b365bf5b5c93144d9fa61a38be78fad
-      internalID: -8392802036319243359
+      spriteID: 09342e27176218980800000000000000
+      internalID: -8538501149817158768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_113
+      name: Terrain Sliced (16x16)_113
       rect:
         serializedVersion: 2
         x: 320
@@ -2905,14 +3342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb3dce8e3e3c3243a16d6ab12dbd7a5
-      internalID: 3768474000973419263
+      spriteID: d6365b9848e3cb0b0800000000000000
+      internalID: -5711621488445660307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_114
+      name: Terrain Sliced (16x16)_114
       rect:
         serializedVersion: 2
         x: 0
@@ -2926,14 +3363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4d5e34840b0a2040874732822010006
-      internalID: -7876864015116417812
+      spriteID: cac00adddd0368cb0800000000000000
+      internalID: -4862145018235712340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_115
+      name: Terrain Sliced (16x16)_115
       rect:
         serializedVersion: 2
         x: 16
@@ -2947,14 +3384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f80853b9ab0f2f4f91f46c4077e276a
-      internalID: 2460501278191033764
+      spriteID: 2077ecd6a9b68b6e0800000000000000
+      internalID: -1821587738259982590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_116
+      name: Terrain Sliced (16x16)_116
       rect:
         serializedVersion: 2
         x: 32
@@ -2968,14 +3405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 982768d033a4e6343804a8e00c939ecf
-      internalID: 6516917985212256981
+      spriteID: f532b8f9b1edc7170800000000000000
+      internalID: 8177655233620157279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_117
+      name: Terrain Sliced (16x16)_117
       rect:
         serializedVersion: 2
         x: 48
@@ -2989,14 +3426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad25413e9951f945902b92fff816ea8
-      internalID: 2870588770018888475
+      spriteID: 88f055ea40579d030800000000000000
+      internalID: 3519973246731882376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_118
+      name: Terrain Sliced (16x16)_118
       rect:
         serializedVersion: 2
         x: 64
@@ -3010,14 +3447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94e6159172486014b987c157ae25da8b
-      internalID: 6172093022122347682
+      spriteID: 98bd4a1f5b9668c00800000000000000
+      internalID: 902525005498473353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_119
+      name: Terrain Sliced (16x16)_119
       rect:
         serializedVersion: 2
         x: 96
@@ -3031,14 +3468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b266403ec6e9da24991d79e87562b674
-      internalID: -4745629342412378363
+      spriteID: 67e0fa229a7242e90800000000000000
+      internalID: -7051467509170499978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_120
+      name: Terrain Sliced (16x16)_120
       rect:
         serializedVersion: 2
         x: 112
@@ -3052,14 +3489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95cb5b93834b3f64aa0575aedb6c36ba
-      internalID: -796906297672391504
+      spriteID: e2ac36efa8fdaaa50800000000000000
+      internalID: 6533279997520759342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_121
+      name: Terrain Sliced (16x16)_121
       rect:
         serializedVersion: 2
         x: 128
@@ -3073,14 +3510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 538087aa37e03934db9d2c9227dd3303
-      internalID: 517537040645658821
+      spriteID: c99e615e062e44fd0800000000000000
+      internalID: -2358511399047075428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_122
+      name: Terrain Sliced (16x16)_122
       rect:
         serializedVersion: 2
         x: 144
@@ -3094,14 +3531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 985ee42afca223e45b6eeae4d3579c19
-      internalID: 2348904716778239224
+      spriteID: 7950ebbd84be5b560800000000000000
+      internalID: 7329022666772186519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_123
+      name: Terrain Sliced (16x16)_123
       rect:
         serializedVersion: 2
         x: 160
@@ -3115,14 +3552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 304ec37634e8e7842982a5593744ccee
-      internalID: 6364211675350883068
+      spriteID: 004a290e689d5adc0800000000000000
+      internalID: -3628254751460514816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_124
+      name: Terrain Sliced (16x16)_124
       rect:
         serializedVersion: 2
         x: 192
@@ -3136,14 +3573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caffc1b89a073ce4aa10771788b7e649
-      internalID: -4506956802181919417
+      spriteID: 3dddfdcd56bb2cf40800000000000000
+      internalID: 5747362120649924051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_125
+      name: Terrain Sliced (16x16)_125
       rect:
         serializedVersion: 2
         x: 208
@@ -3157,14 +3594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2a622cd93f55de40bb53e6a26b6035b
-      internalID: -8554552240816166350
+      spriteID: 96de52e3b491e4ab0800000000000000
+      internalID: -5022048723515609751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_126
+      name: Terrain Sliced (16x16)_126
       rect:
         serializedVersion: 2
         x: 224
@@ -3178,14 +3615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7510ff13242c034bb13cb84c6673dbc
-      internalID: 5155531445672774593
+      spriteID: 416f0a936e98180b0800000000000000
+      internalID: -5728145629136226796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_127
+      name: Terrain Sliced (16x16)_127
       rect:
         serializedVersion: 2
         x: 240
@@ -3199,14 +3636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2765af387a133814db9d4b79d5e9c813
-      internalID: -8283946481429751769
+      spriteID: 3e930e67e57ff7800800000000000000
+      internalID: 612480059439069667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_128
+      name: Terrain Sliced (16x16)_128
       rect:
         serializedVersion: 2
         x: 272
@@ -3220,14 +3657,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1316dfb269ecf6e4eb45773bcf7a5279
-      internalID: 1437503401646794464
+      spriteID: f38ce7e78424de1e0800000000000000
+      internalID: -2167002966568024001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_129
+      name: Terrain Sliced (16x16)_129
       rect:
         serializedVersion: 2
         x: 288
@@ -3241,14 +3678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab86adb63f822e48b0031ed2954753f
-      internalID: -8608529027667364052
+      spriteID: a1bfe88e6719ea300800000000000000
+      internalID: 265309367955290906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_130
+      name: Terrain Sliced (16x16)_130
       rect:
         serializedVersion: 2
         x: 304
@@ -3262,14 +3699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc52c168607ca64e8b9220c80c02559
-      internalID: -984624906782596688
+      spriteID: 41adcf4a3290795a0800000000000000
+      internalID: -6514728287271593452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_131
+      name: Terrain Sliced (16x16)_131
       rect:
         serializedVersion: 2
         x: 320
@@ -3283,14 +3720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453844a7c4375fa48ab4e46499aeb30c
-      internalID: -3935483887006374238
+      spriteID: f332b0eb005ad9d40800000000000000
+      internalID: 5592807734871008063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_132
+      name: Terrain Sliced (16x16)_132
       rect:
         serializedVersion: 2
         x: 0
@@ -3304,14 +3741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df48da2a67e4e7b438ab1222b18d3aa9
-      internalID: 9178892520020476994
+      spriteID: c282fb78114da9440800000000000000
+      internalID: 4943496712749525036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_133
+      name: Terrain Sliced (16x16)_133
       rect:
         serializedVersion: 2
         x: 16
@@ -3325,14 +3762,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d879d70579549140a2860c9ffb4394f
-      internalID: -144014455013166516
+      spriteID: 131a64cac09776d40800000000000000
+      internalID: 5577559758858527025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_134
+      name: Terrain Sliced (16x16)_134
       rect:
         serializedVersion: 2
         x: 32
@@ -3346,14 +3783,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7bfa2ec5c893054b88c1fd0aa6aa88a
-      internalID: -3253207453764529203
+      spriteID: bfc8b5dc3ac04f3d0800000000000000
+      internalID: -3173897939724825349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_135
+      name: Terrain Sliced (16x16)_135
       rect:
         serializedVersion: 2
         x: 96
@@ -3367,14 +3804,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc171707b1d22b84fa913a1e8053274c
-      internalID: -7168242779200424501
+      spriteID: ed09ccbb21c86a460800000000000000
+      internalID: 7252638262014808286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_136
+      name: Terrain Sliced (16x16)_136
       rect:
         serializedVersion: 2
         x: 112
@@ -3388,14 +3825,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f000fc1f314f3a344859a6b9a24041e1
-      internalID: -8219376919472097953
+      spriteID: 7fc90f33b78fcf910800000000000000
+      internalID: 1872644753115356407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_137
+      name: Terrain Sliced (16x16)_137
       rect:
         serializedVersion: 2
         x: 128
@@ -3409,14 +3846,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e411fa29d67dd804bb5d805ee6fdbb07
-      internalID: 5344690722283713150
+      spriteID: 85173323900382c80800000000000000
+      internalID: -8347369093276143272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_138
+      name: Terrain Sliced (16x16)_138
       rect:
         serializedVersion: 2
         x: 208
@@ -3430,14 +3867,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79fcdd4858bedd4438f13b6bc693327b
-      internalID: 5394353238224683576
+      spriteID: 2da4cbd53fd461af0800000000000000
+      internalID: -426067407094920494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_139
+      name: Terrain Sliced (16x16)_139
       rect:
         serializedVersion: 2
         x: 224
@@ -3451,14 +3888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b10ae49d161424eae5bbfe98ca8e27
-      internalID: 8028931387866111178
+      spriteID: 86a341c313e16a900800000000000000
+      internalID: 695276389285509736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_140
+      name: Terrain Sliced (16x16)_140
       rect:
         serializedVersion: 2
         x: 240
@@ -3472,14 +3909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ececbbe1fb3d3714fb40a6dee9d75c73
-      internalID: 2961677793244026094
+      spriteID: b5f052bd447dfa100800000000000000
+      internalID: 121552405696679771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_141
+      name: Terrain Sliced (16x16)_141
       rect:
         serializedVersion: 2
         x: 288
@@ -3493,14 +3930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60053c52a5b97942bef1f9cf9988104
-      internalID: -2580880771318319752
+      spriteID: 5d8229ea42d6a17d0800000000000000
+      internalID: -2946923001845503787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_142
+      name: Terrain Sliced (16x16)_142
       rect:
         serializedVersion: 2
         x: 304
@@ -3514,14 +3951,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a76a7900bbf6c27419ce9220fb8071fc
-      internalID: -2266960901078078804
+      spriteID: 41d2036f851b4b3c0800000000000000
+      internalID: -4344652744860095212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain (16x16)_143
+      name: Terrain Sliced (16x16)_143
       rect:
         serializedVersion: 2
         x: 320
@@ -3535,8 +3972,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9bbfe6c75beeb149a03b8f9c3977790
-      internalID: 4320056378629417345
+      spriteID: bd2283c4374d51730800000000000000
+      internalID: 3969312238262035163
       vertices: []
       indices: 
       edges: []
