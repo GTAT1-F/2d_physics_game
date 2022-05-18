@@ -12,9 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
-    private UInt32 livePoint = 1;
-    [SerializeField] private Text livePoints;
-
+    
     // Start is called before the first frame update
     private void Start()
     {
@@ -51,16 +49,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("running", false);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("Cherry"))
-        {
-            ++livePoint;
-            Destroy(col.gameObject);
-            livePoints.text = "LivePoint: " + livePoints;
         }
     }
 }
