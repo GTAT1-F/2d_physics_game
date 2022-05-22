@@ -33,7 +33,8 @@ public class Boss : MonoBehaviour
     [SerializeField] private bool attackInProgress;
     [SerializeField] private bool playerInBox;
 
-
+    private int groundLayer;
+    private int playerAttackLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,8 @@ public class Boss : MonoBehaviour
         stateMachine = GetComponentInChildren<bsm.BossStateMachine>();
         possibleActions = new List<string>();
         currentAction = null;
+        groundLayer = LayerMask.NameToLayer("Ground");
+        playerAttackLayer = LayerMask.NameToLayer("PlayerAttacks");
     }
 
     // Update is called once per frame
@@ -79,12 +82,10 @@ public class Boss : MonoBehaviour
         // Check if boss is on the ground
         isGrounded = boxCollider.IsTouchingLayers(Physics2D.AllLayers);
 
-        // Check if player is in radius
         playerInBox = CheckForPlayer();
 
-
         // Check if attack is finished
-        attackInProgress = attackTimer <= attackDuration;
+        attackInProgress = attackTimer < attackDuration;
 
         // Choose an attack of the attacks possible in boss's current state after the previous attack has played for attackDuration
         if (!attackInProgress)
@@ -105,7 +106,6 @@ public class Boss : MonoBehaviour
         if (!attackInProgress)
         {
             attackTimer = 0f;
-            attackInProgress = false;
         }
         else
         {
@@ -117,15 +117,18 @@ public class Boss : MonoBehaviour
     {
         GameObject go = collision.gameObject;
 
-        if(go.layer == 3) // Ground layer
+        if(go.layer == groundLayer)
         {
             isGrounded = true;
-            //StartCoroutine(TakeDamage(0));
+        }
+        else if(go.layer == playerAttackLayer) // Take damage if collision was with player projectile
+        {
+            StartCoroutine(TakeDamage(1));
         }
     }
 
     // Instantiates a spiked ball at the center attack point on each side
-    public void BallAttack()
+    public void BallAttack2()
     {
         Transform leftAttackPoint = leftAttackPoints[1];
         var ball = Instantiate(spikedBallPrefab, leftAttackPoint);
@@ -134,6 +137,19 @@ public class Boss : MonoBehaviour
         Transform rightAttackPoint = rightAttackPoints[1];
         ball = Instantiate(spikedBallPrefab, rightAttackPoint);
         ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+    }
+
+    public IEnumerator BallAttack()
+    {
+        Transform leftAttackPoint = leftAttackPoints[1];
+        var ball = Instantiate(spikedBallPrefab, leftAttackPoint);
+        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+
+        Transform rightAttackPoint = rightAttackPoints[1];
+        ball = Instantiate(spikedBallPrefab, rightAttackPoint);
+        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+
+        yield return null;
     }
 
     public IEnumerator TakeDamage(int damage)
@@ -154,9 +170,12 @@ public class Boss : MonoBehaviour
     {
         while (true)
         {
-            yield return StartCoroutine(MoveUp(8f));
+            yield return StartCoroutine(MoveUp(25f));
             yield return StartCoroutine(WaitToLand());
-            if(isGrounded) BallAttack();
+            if(isGrounded)
+            {
+                yield return StartCoroutine(BallAttack());
+            }
         }  
     }
 
@@ -165,26 +184,19 @@ public class Boss : MonoBehaviour
     {
         while (true)
         {
-            for (int i = 0; i < leftAttackPoints.Length; i++)
+            if (isGrounded)
             {
-                yield return new WaitForSeconds(1f);
-                var ball = Instantiate(spikedBallPrefab, leftAttackPoints[i]);
-                ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
-                ball = Instantiate(spikedBallPrefab, rightAttackPoints[i]);
-                ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                for (int i = 0; i < leftAttackPoints.Length; i++)
+                {
+                    yield return new WaitForSeconds(1f);
+                    var ball = Instantiate(spikedBallPrefab, leftAttackPoints[i]);
+                    ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                    ball = Instantiate(spikedBallPrefab, rightAttackPoints[i]);
+                    ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                }
             }
         }
     }
-
-    public IEnumerator MoveUp(float force)
-    {
-        while (isGrounded)
-        {
-            rigidBody.AddForce(new Vector2(0, force));
-            yield return null;
-        }
-    }
-
     private IEnumerator WaitToLand()
     {
         while (true)
@@ -195,21 +207,51 @@ public class Boss : MonoBehaviour
         }
     }
 
+/*    public IEnumerator SlamAttack()
+    {
+        while (true)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 10f);
+            ColliderDistance2D distance = hit.collider.Distance(boxCollider);
+            float distanceToGround = distance.distance;
+
+            if (distanceToGround < 10f)
+            {
+                yield return StartCoroutine(MoveUp(25f));
+            }
+            else
+            {
+                StopAllCoroutines();
+                yield return StartCoroutine(MoveDown(-40f));
+            }
+        }
+    }*/
+
     public IEnumerator SlamAttack()
     {
-        float distanceToGround = 0f;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 100f);
+        ColliderDistance2D distance = hit.collider.Distance(boxCollider);
 
-        while (distanceToGround < 10f)
+        float distanceToGround = distance.distance;
+
+        while(distanceToGround < 4f)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 50f);
-            ColliderDistance2D distance = hit.collider.Distance(boxCollider);
-            distanceToGround = distance.distance;
-            Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red);
-            yield return StartCoroutine(MoveUp(24f));
+            Debug.Log("dist to ground " + distanceToGround);
+            yield return StartCoroutine(MoveUp(25f));
         }
-        StopCoroutine(MoveUp(24f));
-        yield return StartCoroutine(MoveDown(-40f));
-        //yield return StartCoroutine(SlamAttack());
+        Debug.Log("stopping move up coroutine");
+        StopCoroutine(MoveUp(25f));
+        yield return StartCoroutine(MoveDown(-50f));
+    }
+
+    public IEnumerator MoveUp(float force)
+    {
+        while (isGrounded)
+        {
+            rigidBody.velocity = Vector3.zero;
+            rigidBody.AddForce(new Vector2(0, force));
+            yield return null;
+        }
     }
     private IEnumerator MoveDown(float force)
     {
@@ -218,7 +260,6 @@ public class Boss : MonoBehaviour
             rigidBody.AddForce(new Vector2(0, force));
             yield return null;
         }
-        //yield break;
         yield return StartCoroutine(SlamAttack());
     }
     private bool CheckForPlayer()

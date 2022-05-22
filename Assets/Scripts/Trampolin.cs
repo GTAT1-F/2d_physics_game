@@ -5,10 +5,15 @@ using UnityEngine;
 public class Trampolin : MonoBehaviour
 {
     [SerializeField] private float trampolineForce;
+    [SerializeField] private Sprite[] sprites;
+    private SpriteRenderer sr;
+    private int spriteIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        trampolineForce = 200f;
+        trampolineForce = 10f;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,7 +23,20 @@ public class Trampolin : MonoBehaviour
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         if(rb)
         {
-            rb.AddForce(new Vector2(0, trampolineForce), ForceMode2D.Force);
+            StartCoroutine(Animate());
+            rb.AddForce(new Vector2(0, trampolineForce), ForceMode2D.Impulse);
         }
+    }
+
+    private IEnumerator Animate()
+    {
+        spriteIndex = 0;
+        while(spriteIndex < sprites.Length)
+        {
+            spriteIndex++;
+            sr.sprite = sprites[spriteIndex];
+            yield return new WaitForSeconds(1/24f);
+        }
+        yield break;
     }
 }

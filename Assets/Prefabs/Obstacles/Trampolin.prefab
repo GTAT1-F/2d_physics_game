@@ -44,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -123,3 +124,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trampolineForce: 0
+  sprites:
+  - {fileID: -3008879249828299126, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 4681692366024343091, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: -4280839998127415039, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 6018414194862253689, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 3596417087806819594, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 6008391082630914036, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 6130167964694822903, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}
+  - {fileID: 4513304123404435328, guid: 5f67602c85a27a847aed4d15b8e0339e, type: 3}

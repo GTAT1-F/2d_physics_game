@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Component to destroy the spiked ball after it leaves the camera's view and when it collides with another object
+/// Destroys the spiked ball after a certain time period or when it collides with other objects.
 /// </summary>
 public class SpikedBall : MonoBehaviour
 {
+    [SerializeField] private float time;
+    [SerializeField] private float lifetime;
+
+    private void Start()
+    {
+        time = 0f;
+        lifetime = 3f;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Vector3 viewPos = Camera.main.WorldToViewportPoint(transform.position);
-        if(viewPos.x < 0 || viewPos.x > 1)
+        time += Time.deltaTime;
+        if(time > lifetime)
         {
-            GameObject.Destroy(gameObject);
+            Destroy(gameObject);
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,7 +32,7 @@ public class SpikedBall : MonoBehaviour
         // Destroy the spiked ball if it collides with anything other than another spiked ball
         if(spikedBall == null)
         {
-            GameObject.Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
