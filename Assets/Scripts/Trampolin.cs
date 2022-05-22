@@ -33,8 +33,8 @@ public class Trampolin : MonoBehaviour
         spriteIndex = 0;
         while(spriteIndex < sprites.Length)
         {
-            spriteIndex++;
             sr.sprite = sprites[spriteIndex];
+            spriteIndex++;
             yield return new WaitForSeconds(1/24f);
         }
         yield break;
