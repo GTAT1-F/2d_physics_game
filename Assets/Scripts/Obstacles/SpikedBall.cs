@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Destroys the spiked ball after a certain time period or when it collides with other objects.
+/// Destroys the spiked ball after a certain time period or when it collides with something.
 /// </summary>
 public class SpikedBall : MonoBehaviour
 {
@@ -28,8 +28,8 @@ public class SpikedBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Destroy this game object if it collides with anything other than another spiked ball
         var spikedBall = collision.gameObject.GetComponent<SpikedBall>();
-        // Destroy the spiked ball if it collides with anything other than another spiked ball
         if(spikedBall == null)
         {
             Destroy(gameObject);

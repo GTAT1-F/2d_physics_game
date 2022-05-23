@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using TMPro;
 using bsm = BossStateMachine;
 
 
-public class Boss : MonoBehaviour
+public class Boss2 : MonoBehaviour
 {
     [SerializeField] GameObject spikedBallPrefab;
     private Transform bossTransform => transform;
@@ -23,15 +27,15 @@ public class Boss : MonoBehaviour
     [SerializeField] TextMeshPro damageText;
     [SerializeField] bsm.BossStateMachine stateMachine;
 
+    //public List<IEnumerator> possibleActions;
     public List<string> possibleActions;
     public string currentAction;
-    public int actionsCount;
+    //public IEnumerator currentAction;
 
     [SerializeField] private float attackTimer;
     public float attackDuration;
     [SerializeField] private bool attackInProgress;
     [SerializeField] private bool playerInBox;
-    
 
     private int groundLayer;
     private int playerAttackLayer;
@@ -39,7 +43,6 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        attackDuration = 5f;
         health = 50;
         ballForce = 100f;
         attackTimer = attackDuration - 0.5f;
@@ -57,34 +60,6 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*        if (!playerInBox)
-        {
-            stateMachine.Trigger(bsm.BossTransitions.Idle);
-        }
-        else 
-        {
-            if (health > 25)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.AttackPhase1);
-            }
-            else if(health > 0)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.AttackPhase2);
-            }
-            else if (health <= 0)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.Death);
-            }
-        }*/
-    }
-
-    private void FixedUpdate()
-    {
-        // Check if boss is on the ground
-        isGrounded = boxCollider.IsTouchingLayers(Physics2D.AllLayers);
-
-        playerInBox = CheckForPlayer();
-
         if (!playerInBox)
         {
             stateMachine.Trigger(bsm.BossTransitions.Idle);
@@ -104,6 +79,14 @@ public class Boss : MonoBehaviour
                 stateMachine.Trigger(bsm.BossTransitions.Death);
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        // Check if boss is on the ground
+        isGrounded = boxCollider.IsTouchingLayers(Physics2D.AllLayers);
+
+        playerInBox = CheckForPlayer();
 
         // Check if attack is finished
         attackInProgress = attackTimer < attackDuration;
@@ -111,9 +94,10 @@ public class Boss : MonoBehaviour
         // Choose an attack of the attacks possible in boss's current state after the previous attack has played for attackDuration
         if (!attackInProgress)
         {
+            int actionsCount = possibleActions.Count;
             if (currentAction != null)
             {
-                StopAllCoroutines();                
+                StopAllCoroutines();
             }
             if (actionsCount > 0)
             {
@@ -137,17 +121,28 @@ public class Boss : MonoBehaviour
     {
         GameObject go = collision.gameObject;
 
-        if(go.layer == groundLayer)
+        if (go.layer == groundLayer)
         {
             isGrounded = true;
         }
-        else if(go.layer == playerAttackLayer) // Take damage if collision was with player projectile
+        else if (go.layer == playerAttackLayer) // Take damage if collision was with player projectile
         {
             StartCoroutine(TakeDamage(1));
         }
     }
 
     // Instantiates a spiked ball at the center attack point on each side
+    public void BallAttack2()
+    {
+        Transform leftAttackPoint = leftAttackPoints[1];
+        var ball = Instantiate(spikedBallPrefab, leftAttackPoint);
+        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+
+        Transform rightAttackPoint = rightAttackPoints[1];
+        ball = Instantiate(spikedBallPrefab, rightAttackPoint);
+        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+    }
+
     public IEnumerator BallAttack()
     {
         Transform leftAttackPoint = leftAttackPoints[1];
@@ -181,11 +176,11 @@ public class Boss : MonoBehaviour
         {
             yield return StartCoroutine(MoveUp(25f));
             yield return StartCoroutine(WaitToLand());
-            if(isGrounded)
+            if (isGrounded)
             {
                 yield return StartCoroutine(BallAttack());
             }
-        }  
+        }
     }
 
     // Sends out balls from the bottom, then center, then top attack points
@@ -216,24 +211,41 @@ public class Boss : MonoBehaviour
         }
     }
 
+    /*    public IEnumerator SlamAttack()
+        {
+            while (true)
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 10f);
+                ColliderDistance2D distance = hit.collider.Distance(boxCollider);
+                float distanceToGround = distance.distance;
+
+                if (distanceToGround < 10f)
+                {
+                    yield return StartCoroutine(MoveUp(25f));
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    yield return StartCoroutine(MoveDown(-40f));
+                }
+            }
+        }*/
+
     public IEnumerator SlamAttack()
     {
-        while (true)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 10f);
-            ColliderDistance2D distance = hit.collider.Distance(boxCollider);
-            float distanceToGround = distance.distance;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 100f);
+        ColliderDistance2D distance = hit.collider.Distance(boxCollider);
 
-            if (distanceToGround < 10f)
-            {
-                yield return StartCoroutine(MoveUp(25f));
-            }
-            else
-            {
-                StopAllCoroutines();
-                yield return StartCoroutine(MoveDown(-40f));
-            }
+        float distanceToGround = distance.distance;
+
+        while (distanceToGround < 4f)
+        {
+            Debug.Log("dist to ground " + distanceToGround);
+            yield return StartCoroutine(MoveUp(25f));
         }
+        Debug.Log("stopping move up coroutine");
+        StopCoroutine(MoveUp(25f));
+        yield return StartCoroutine(MoveDown(-50f));
     }
 
     public IEnumerator MoveUp(float force)
@@ -247,7 +259,7 @@ public class Boss : MonoBehaviour
     }
     private IEnumerator MoveDown(float force)
     {
-        while(!isGrounded)
+        while (!isGrounded)
         {
             rigidBody.AddForce(new Vector2(0, force));
             yield return null;

@@ -27,15 +27,18 @@ namespace BossStateMachine
             // Change the sprites / color of sprite
 
             // Set the attacks that are possible in this state
-            boss.possibleActions.Add("GroundedAttack");
-            boss.possibleActions.Add("SlamAttack");
-            boss.possibleActions.Add("UpDownAttack");
+            //boss.possibleActions.Add("GroundedAttack");
+            //boss.possibleActions.Add("SlamAttack");
+            //boss.possibleActions.Add("UpDownAttack");
+
+            boss.actionsCount = boss.possibleActions.Count;
         }
 
         public override void OnExit<T>(T transition)
         {
             boss.StopAllCoroutines();
             boss.possibleActions.Clear();
+            boss.actionsCount = 0;
         }
     }
 
