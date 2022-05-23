@@ -464,7 +464,7 @@ Transform:
   m_LocalScale: {x: 19.005138, y: 19.005138, z: 19.005138}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &117188167
 MonoBehaviour:
@@ -597,6 +597,36 @@ Transform:
   - {fileID: 897150748}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &142757619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142757620}
+  m_Layer: 6
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142757620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142757619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.18, y: -0.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1062368579}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &143632245
 PrefabInstance:
@@ -3180,6 +3210,7 @@ GameObject:
   - component: {fileID: 1062368577}
   - component: {fileID: 1062368580}
   - component: {fileID: 1062368581}
+  - component: {fileID: 1062368584}
   - component: {fileID: 1062368582}
   - component: {fileID: 1062368583}
   m_Layer: 6
@@ -3270,9 +3301,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062368576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 303.29, y: 204.87, z: 0}
+  m_LocalPosition: {x: 304.13, y: 204.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 142757620}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3348,6 +3380,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livePointsText: {fileID: 1648615571}
+--- !u!114 &1062368584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062368576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d273eb85073aeed43a7c180b609518fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 142757620}
+  input: 0
+  canAttack: 0
+  attackPrefab: {fileID: 8131556278542825493, guid: c7416d258b76b8b409d0d3baaf9afbe4, type: 3}
+  force: 0
 --- !u!1001 &1085392079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5555,7 +5604,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8865084312389330562, guid: 0acbbf0c8a68cb94da68e8481239f765, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8865084312389330563, guid: 0acbbf0c8a68cb94da68e8481239f765, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8865084312389330566, guid: 0acbbf0c8a68cb94da68e8481239f765, type: 3}
       propertyPath: m_Name
@@ -5563,7 +5616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8865084312389330567, guid: 0acbbf0c8a68cb94da68e8481239f765, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8865084312389330567, guid: 0acbbf0c8a68cb94da68e8481239f765, type: 3}
       propertyPath: m_LocalScale.x
@@ -5705,7 +5758,7 @@ GameObject:
   - component: {fileID: 1871770726}
   - component: {fileID: 1871770725}
   - component: {fileID: 1871770724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13011,7 +13064,7 @@ Transform:
   - {fileID: 999277344}
   - {fileID: 1203986841}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2062419856
 PrefabInstance:
