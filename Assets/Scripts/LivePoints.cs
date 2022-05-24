@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class LivePoints : MonoBehaviour
 {
-    private int livePoints = 5;
+    public int livePoints { get; private set; }
     [SerializeField] private Text livePointsText;
 
     private void Start()
     {
+        livePoints = 5;
         livePointsText.text = "Live Points: " + livePoints;
     }
 

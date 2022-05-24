@@ -8,6 +8,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    public int score;
     [SerializeField] private ScoreDataList scoreDataList;
     [SerializeField] private GameObject[] scoreBoardEntries;
     [SerializeField] private string path = "";
@@ -17,43 +18,26 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         path = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "ScoreData.json";
         scoreDataList?.list.Clear();
         // Get the list of scores and set the UI text
         LoadScores();
-
-/*        scoreDataList.list.Add(new ScoreData { score = 100, datetime = DateTime.Now.ToString() });
-        scoreDataList.list.Add(new ScoreData { score = 150, datetime = DateTime.Now.ToString() });
-        scoreDataList.list.Add(new ScoreData { score = 20, datetime = DateTime.Now.ToString() });
-        scoreDataList.list.Add(new ScoreData { score = 300, datetime = DateTime.Now.ToString() });
-        scoreDataList.list.Add(new ScoreData { score = 50, datetime = DateTime.Now.ToString() });*/
-
-        SaveScores();
-        DisplayScores();
+        DisplayScores();    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (gameOver)
-        {
-            AddCurrentScore();
-            SaveScores();
-            DisplayScores();
-        }
-    }
-
-    void AddCurrentScore()
+    public void AddCurrentScore()
     {
         // Get the current score and date/time
         ScoreData newScoreData = new ScoreData
         {
-            //score = get the score,
+            score = score,
             datetime = DateTime.Now.ToString()
         };
         scoreDataList.list.Add(newScoreData);
+        SaveScores();
     }
-    void LoadScores()
+    private void LoadScores()
     {
         if (File.Exists(path))
         {
@@ -73,7 +57,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public void SaveScores()
+    private void SaveScores()
     {
         // Sort the list
         scoreDataList.list.Sort(CompareByScore);
@@ -86,9 +70,10 @@ public class ScoreManager : MonoBehaviour
         StreamWriter sw = new StreamWriter(path);
         sw.Write(json);
         sw.Close();
+        DisplayScores();
     }
 
-    public void DisplayScores()
+    private void DisplayScores()
     {       
         // Set the text of the textmeshpro components
         for(int i = 0; i < scoreBoardEntries.Length; i++)
@@ -105,10 +90,10 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+/*    private void OnDestroy()
     {
         SaveScores();
-    }
+    }*/
 
     // https://docs.microsoft.com/en-us/dotnet/api/system.comparison-1?view=net-6.0
     private static int CompareByScore(ScoreData a, ScoreData b)

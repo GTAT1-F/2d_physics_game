@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using bsm = BossStateMachine;
+using System;
 
 
 public class Boss : MonoBehaviour
 {
-    [SerializeField] GameObject spikedBallPrefab;
+    [SerializeField] private GameObject spikedBallPrefab;
     private Transform bossTransform => transform;
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
     private SpriteRenderer spriteRenderer;
 
-    [SerializeField] Transform[] leftAttackPoints;
-    [SerializeField] Transform[] rightAttackPoints;
-
+    [SerializeField] private Transform[] leftAttackPoints;
+    [SerializeField] private Transform[] rightAttackPoints;
+    public int Health { get => health ; private set => health = value; }
     [SerializeField] private int health;
-    [SerializeField] private bool isGrounded;
+
     [SerializeField] public float ballForce;
+    private bool isGrounded;
 
     [SerializeField] TextMeshPro damageText;
     [SerializeField] bsm.BossStateMachine stateMachine;
@@ -27,14 +29,15 @@ public class Boss : MonoBehaviour
     public string currentAction;
     public int actionsCount;
 
-    [SerializeField] private float attackTimer;
+    public float startingAttackDuration;
     public float attackDuration;
     [SerializeField] private bool attackInProgress;
     [SerializeField] private bool playerInBox;
     
-
-    private int groundLayer;
+    private int groundLayer; 
+    private int groundLayerMask;
     private int playerAttackLayer;
+    private int playerLayerMask;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +45,7 @@ public class Boss : MonoBehaviour
         attackDuration = 5f;
         health = 50;
         ballForce = 100f;
-        attackTimer = attackDuration - 0.5f;
-        isGrounded = false;
+        startingAttackDuration = 8f;
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -51,38 +53,17 @@ public class Boss : MonoBehaviour
         possibleActions = new List<string>();
         currentAction = null;
         groundLayer = LayerMask.NameToLayer("Ground");
+        groundLayerMask = LayerMask.GetMask(new string[] {"Ground"});
         playerAttackLayer = LayerMask.NameToLayer("PlayerAttacks");
+        playerLayerMask = LayerMask.GetMask(new string[] {"Player"});
     }
 
     // Update is called once per frame
     void Update()
     {
-/*        if (!playerInBox)
-        {
-            stateMachine.Trigger(bsm.BossTransitions.Idle);
-        }
-        else 
-        {
-            if (health > 25)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.AttackPhase1);
-            }
-            else if(health > 0)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.AttackPhase2);
-            }
-            else if (health <= 0)
-            {
-                stateMachine.Trigger(bsm.BossTransitions.Death);
-            }
-        }*/
-    }
-
-    private void FixedUpdate()
-    {
         // Check if boss is on the ground
-        isGrounded = boxCollider.IsTouchingLayers(Physics2D.AllLayers);
-
+        isGrounded = boxCollider.IsTouchingLayers(groundLayerMask);
+        // Check if player is nearby
         playerInBox = CheckForPlayer();
 
         if (!playerInBox)
@@ -105,45 +86,41 @@ public class Boss : MonoBehaviour
             }
         }
 
-        // Check if attack is finished
-        attackInProgress = attackTimer < attackDuration;
+        // Update the timer
+        if (!attackInProgress)
+        {
+            attackDuration = startingAttackDuration;
+        }
+        else
+        {
+            attackDuration -= Time.deltaTime;
+        }
 
         // Choose an attack of the attacks possible in boss's current state after the previous attack has played for attackDuration
         if (!attackInProgress)
         {
             if (currentAction != null)
             {
-                StopAllCoroutines();                
+                StopAllCoroutines();
             }
             if (actionsCount > 0)
             {
-                currentAction = possibleActions[Random.Range(0, actionsCount)];
+                currentAction = possibleActions[UnityEngine.Random.Range(0, actionsCount)];
                 StartCoroutine(currentAction);
             }
         }
 
-        // Update the timer
-        if (!attackInProgress)
-        {
-            attackTimer = 0f;
-        }
-        else
-        {
-            attackTimer += Time.fixedDeltaTime;
-        }
+        // Check if attack is finished
+        attackInProgress = attackDuration > 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject go = collision.gameObject;
-
-        if(go.layer == groundLayer)
+        
+        if(go.layer == playerAttackLayer) // Take damage if collision was with player projectile
         {
-            isGrounded = true;
-        }
-        else if(go.layer == playerAttackLayer) // Take damage if collision was with player projectile
-        {
-            StartCoroutine(TakeDamage(1));
+            StartCoroutine(TakeDamage(1)); // TakeDamage(player.getDamage())
         }
     }
 
@@ -163,7 +140,7 @@ public class Boss : MonoBehaviour
 
     public IEnumerator TakeDamage(int damage)
     {
-        health -= damage;
+        Health -= damage;
 
         damageText.color = Color.red;
         damageText.text = damage.ToString();
@@ -179,12 +156,10 @@ public class Boss : MonoBehaviour
     {
         while (true)
         {
-            yield return StartCoroutine(MoveUp(25f));
+            yield return StartCoroutine(MoveUp(10f));
             yield return StartCoroutine(WaitToLand());
-            if(isGrounded)
-            {
-                yield return StartCoroutine(BallAttack());
-            }
+            yield return StartCoroutine(BallAttack());
+            yield return null;
         }  
     }
 
@@ -197,23 +172,23 @@ public class Boss : MonoBehaviour
             {
                 for (int i = 0; i < leftAttackPoints.Length; i++)
                 {
-                    yield return new WaitForSeconds(1f);
                     var ball = Instantiate(spikedBallPrefab, leftAttackPoints[i]);
                     ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
                     ball = Instantiate(spikedBallPrefab, rightAttackPoints[i]);
                     ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                    yield return new WaitForSeconds(2f);
                 }
             }
+            yield return null;
         }
     }
     private IEnumerator WaitToLand()
     {
-        while (true)
+        while (!isGrounded)
         {
-            isGrounded = boxCollider.IsTouchingLayers(Physics2D.AllLayers);
-            if (isGrounded) yield break;
             yield return null;
         }
+        yield break;
     }
 
     public IEnumerator SlamAttack()
@@ -223,16 +198,18 @@ public class Boss : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector3.down, 10f);
             ColliderDistance2D distance = hit.collider.Distance(boxCollider);
             float distanceToGround = distance.distance;
+            Debug.DrawRay(transform.position, Vector3.down * 10f, Color.green);
 
-            if (distanceToGround < 10f)
+            if (distanceToGround < 5f)
             {
-                yield return StartCoroutine(MoveUp(25f));
+                yield return StartCoroutine(MoveUp(15f));
             }
             else
             {
                 StopAllCoroutines();
-                yield return StartCoroutine(MoveDown(-40f));
+                yield return StartCoroutine(MoveDown(-20f));
             }
+            yield return null;
         }
     }
 
@@ -241,24 +218,24 @@ public class Boss : MonoBehaviour
         while (isGrounded)
         {
             rigidBody.velocity = Vector3.zero;
-            rigidBody.AddForce(new Vector2(0, force));
+            rigidBody.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
             yield return null;
         }
+        yield break;
     }
     private IEnumerator MoveDown(float force)
     {
-        while(!isGrounded)
+        while (!isGrounded)
         {
-            rigidBody.AddForce(new Vector2(0, force));
+            rigidBody.velocity = Vector3.zero;
+            rigidBody.AddForce(new Vector2(0, force), ForceMode2D.Impulse);
             yield return null;
         }
         yield return StartCoroutine(SlamAttack());
     }
     private bool CheckForPlayer()
     {
-        int layerMask = LayerMask.GetMask("Player");
-
-        Collider2D result = Physics2D.OverlapBox(transform.position, new Vector2(50f, 100f), 0, layerMask);
+        Collider2D result = Physics2D.OverlapBox(transform.position, new Vector2(50f, 100f), 0, playerLayerMask);
         if (result != null) return true;
         return false;
     }
