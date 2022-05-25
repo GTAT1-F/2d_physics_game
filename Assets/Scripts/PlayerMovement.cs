@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private LayerMask jumpableGround;
     
+    // Character sounds
+    [SerializeField] private AudioSource jumpSound;
+    
     // Start is called before the first frame update
     private void Start()
     {
@@ -36,10 +39,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         dirX = Input.GetAxisRaw("Horizontal");
-        player.velocity = new Vector2(dirX * moveSpeed * (40*Time.deltaTime), player.velocity.y);
+        player.velocity = new Vector2(dirX * moveSpeed, player.velocity.y);
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
             player.velocity = new Vector2(player.velocity.x, jumpForce);
+            jumpSound.Play();
         }
 
         UpdateAnimationState();
@@ -92,5 +96,20 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+    // increases the player's movement speed
+    public void increaseSpeed()
+    {
+        moveSpeed = moveSpeed + 3;
+    }
+
+    // the player increases his speed when colliding with the melon
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Melon"))
+        {
+            Destroy(col.gameObject);
+            increaseSpeed();
+        }
     }
 }

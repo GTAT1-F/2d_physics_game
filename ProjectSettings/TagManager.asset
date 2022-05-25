@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cherry
+  - Box
+  - Bullet
+  - Melon
+  - Orange
+  - Apple
+  - Strawberry
   layers:
   - Default
   - TransparentFX
