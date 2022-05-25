@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7891f207-9119-48e7-94ad-2e0463b011fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LivePoints.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LivePoints.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/ImpactEffect.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/ImpactEffect.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/ImpactEffect.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/ImpactEffect.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Falling.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Falling.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Jumping.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Jumping.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Running.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player_Running.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_Prefab.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet_Prefab.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ImpactEffect.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ImpactEffect.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyAnimation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2d_physics_game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2d_physics_game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/jumping.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/jumping.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/running.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/running.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-3/Hit-3 Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-3/Hit-3 Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-3/hits-3-1 (1).controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-3/hits-3-1 (1).controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-4/Hit-4 Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-4/Hit-4 Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-4/hits-4-1 (1).controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warped Shooting Fx/Pixel Art/Hits/Hit-4/hits-4-1 (1).controller.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +71,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.1.16f1\Editor\Unity.exe" />
