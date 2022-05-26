@@ -25,7 +25,7 @@ namespace BossStateMachine
             boss.ballForce = 200f;
 
             // Change the sprites / color of sprite
-            spriteRenderer.color = new Color(0.9f, 0.4f, 0.4f);
+            spriteRenderer.color = new Color(0.7f, 0.55f, 0.55f);
 
             // Set the attacks that are possible in this state
             boss.possibleActions.Add("GroundedAttack");

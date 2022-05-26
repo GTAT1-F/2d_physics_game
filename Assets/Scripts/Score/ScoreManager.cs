@@ -90,11 +90,6 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-/*    private void OnDestroy()
-    {
-        SaveScores();
-    }*/
-
     // https://docs.microsoft.com/en-us/dotnet/api/system.comparison-1?view=net-6.0
     private static int CompareByScore(ScoreData a, ScoreData b)
     {

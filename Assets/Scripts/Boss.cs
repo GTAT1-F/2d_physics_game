@@ -16,6 +16,9 @@ public class Boss : MonoBehaviour
 
     [SerializeField] private Transform[] leftAttackPoints;
     [SerializeField] private Transform[] rightAttackPoints;
+
+    [SerializeField] public Sprite[] landingAnimationSprites;
+    [SerializeField] private int spriteIndex = 0;
     public int Health { get => health ; private set => health = value; }
     [SerializeField] private int health;
 
@@ -38,6 +41,8 @@ public class Boss : MonoBehaviour
     private int groundLayerMask;
     private int playerAttackLayer;
     private int playerLayerMask;
+
+    bool animating = false;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +85,7 @@ public class Boss : MonoBehaviour
             {
                 stateMachine.Trigger(bsm.BossTransitions.AttackPhase2);
             }
-            else if (health <= 0)
+            else
             {
                 stateMachine.Trigger(bsm.BossTransitions.Death);
             }
@@ -101,6 +106,7 @@ public class Boss : MonoBehaviour
         {
             if (currentAction != null)
             {
+                Debug.LogWarning("stopping all coroutines");
                 StopAllCoroutines();
             }
             if (actionsCount > 0)
@@ -117,13 +123,18 @@ public class Boss : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject go = collision.gameObject;
-        
-        if(go.layer == playerAttackLayer) // Take damage if collision was with player projectile
+        // Take damage if collision was with player bullet
+        if (go.layer == playerAttackLayer)
         {
             StartCoroutine(TakeDamage(1)); // TakeDamage(player.getDamage())
         }
-    }
+        // Play landing animation if collision was with the ground
+        if (go.layer == groundLayer)
+        {
+            //StartCoroutine(LandingAnimation());
 
+        }
+    }
     // Instantiates a spiked ball at the center attack point on each side
     public IEnumerator BallAttack()
     {
@@ -238,6 +249,16 @@ public class Boss : MonoBehaviour
         Collider2D result = Physics2D.OverlapBox(transform.position, new Vector2(50f, 100f), 0, playerLayerMask);
         if (result != null) return true;
         return false;
+    }
+
+    private IEnumerator LandingAnimation()
+    {
+        for(int i = 0; i < landingAnimationSprites.Length; i++)
+        {
+            spriteRenderer.sprite = landingAnimationSprites[i];
+            yield return new WaitForSeconds(1 / 24f);
+        }
+        yield break;
     }
 
     private void OnDrawGizmos()

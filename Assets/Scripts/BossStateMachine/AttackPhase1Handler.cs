@@ -33,7 +33,6 @@ namespace BossStateMachine
 
             boss.actionsCount = boss.possibleActions.Count;
         }
-
         public override void OnExit<T>(T transition)
         {
             boss.StopAllCoroutines();

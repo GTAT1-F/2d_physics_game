@@ -9,6 +9,7 @@ public class SpikedBall : MonoBehaviour
 {
     [SerializeField] private float time;
     [SerializeField] private float lifetime;
+    [SerializeField] private GameObject collisionPrefab;
 
     private void Start()
     {
@@ -28,11 +29,8 @@ public class SpikedBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Destroy this game object if it collides with anything other than another spiked ball
-        var spikedBall = collision.gameObject.GetComponent<SpikedBall>();
-        if(spikedBall == null)
-        {
-            Destroy(gameObject);
-        }
+        // Play collision animation, then destroy spiked ball
+        Instantiate(collisionPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

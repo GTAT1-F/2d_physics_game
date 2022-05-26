@@ -10,15 +10,22 @@ namespace BossStateMachine
 {
     public class DeathHandler : StateHandler
     {
-        [SerializeField] private GameObject boss;
+        [SerializeField] private Boss boss;
+        [SerializeField] private GameObject prefab;
+
+        private void Awake()
+        {
+            boss = GetComponentInParent<Boss>();
+        }
         public override void OnEnter<T>(T transition)
         {
-            GameObject.Destroy(boss);
+            Instantiate(prefab, boss.transform.position, Quaternion.identity);
+            //boss.GetComponent<SpriteRenderer>().sprite = null;
         }
 
         public override void OnExit<T>(T transition)
         {
-
+            GameObject.Destroy(boss.gameObject);
         }
     }
 }

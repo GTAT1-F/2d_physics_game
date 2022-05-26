@@ -19,7 +19,6 @@ namespace BossStateMachine
         public override void OnEnter<T>(T transition)
         {
             boss.possibleActions.Clear();
-            //Debug.Log(this.Name + " triggered");
         }
 
         public override void OnExit<T>(T transition)

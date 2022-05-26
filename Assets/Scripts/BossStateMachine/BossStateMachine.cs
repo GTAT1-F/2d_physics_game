@@ -17,6 +17,9 @@ namespace BossStateMachine
 
         private void Awake()
         {
+            // Idle -> Idle
+            AddTransition(IdleHandler, IdleHandler, BossTransitions.Idle);
+
             // Idle -> AttackPhase1; AttackPhase1 -> Idle
             AddTransition(IdleHandler, AttackPhase1Handler, BossTransitions.AttackPhase1);
             AddTransition(AttackPhase1Handler, IdleHandler, BossTransitions.Idle);
@@ -30,6 +33,9 @@ namespace BossStateMachine
 
             // AttackPhase2 -> Dead
             AddTransition(AttackPhase2Handler, DeathHandler, BossTransitions.Death);
+
+            // Dead -> Dead
+            AddTransition(DeathHandler, DeathHandler, BossTransitions.Death);
 
             Commit();
         }
