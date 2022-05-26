@@ -32,8 +32,8 @@ public class Boss : MonoBehaviour
     public string currentAction;
     public int actionsCount;
 
-    public float startingAttackDuration;
     public float attackDuration;
+    public float timeRemaining;
     [SerializeField] private bool attackInProgress;
     [SerializeField] private bool playerInBox;
     
@@ -47,10 +47,10 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        attackDuration = 5f;
+        timeRemaining = 0.5f;
         health = 50;
         ballForce = 100f;
-        startingAttackDuration = 8f;
+        attackDuration = 8f;
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -94,11 +94,11 @@ public class Boss : MonoBehaviour
         // Update the timer
         if (!attackInProgress)
         {
-            attackDuration = startingAttackDuration;
+            timeRemaining = attackDuration;
         }
         else
         {
-            attackDuration -= Time.deltaTime;
+            timeRemaining -= Time.deltaTime;
         }
 
         // Choose an attack of the attacks possible in boss's current state after the previous attack has played for attackDuration
@@ -117,7 +117,7 @@ public class Boss : MonoBehaviour
         }
 
         // Check if attack is finished
-        attackInProgress = attackDuration > 0;
+        attackInProgress = timeRemaining > 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -127,12 +127,6 @@ public class Boss : MonoBehaviour
         if (go.layer == playerAttackLayer)
         {
             StartCoroutine(TakeDamage(1)); // TakeDamage(player.getDamage())
-        }
-        // Play landing animation if collision was with the ground
-        if (go.layer == groundLayer)
-        {
-            //StartCoroutine(LandingAnimation());
-
         }
     }
     // Instantiates a spiked ball at the center attack point on each side
@@ -249,16 +243,6 @@ public class Boss : MonoBehaviour
         Collider2D result = Physics2D.OverlapBox(transform.position, new Vector2(50f, 100f), 0, playerLayerMask);
         if (result != null) return true;
         return false;
-    }
-
-    private IEnumerator LandingAnimation()
-    {
-        for(int i = 0; i < landingAnimationSprites.Length; i++)
-        {
-            spriteRenderer.sprite = landingAnimationSprites[i];
-            yield return new WaitForSeconds(1 / 24f);
-        }
-        yield break;
     }
 
     private void OnDrawGizmos()

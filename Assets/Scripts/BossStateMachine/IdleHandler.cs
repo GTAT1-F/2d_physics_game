@@ -23,8 +23,7 @@ namespace BossStateMachine
 
         public override void OnExit<T>(T transition)
         {
-            //Debug.Log("leaving " + this.Name + " state");
-            //boss.possibleActions.Clear();
+
         }
     }
 }

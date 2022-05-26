@@ -20,7 +20,6 @@ namespace BossStateMachine
         public override void OnEnter<T>(T transition)
         {
             Instantiate(prefab, boss.transform.position, Quaternion.identity);
-            //boss.GetComponent<SpriteRenderer>().sprite = null;
         }
 
         public override void OnExit<T>(T transition)
