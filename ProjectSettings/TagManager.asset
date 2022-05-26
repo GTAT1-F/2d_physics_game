@@ -9,6 +9,8 @@ TagManager:
   - Bullet
   - Melon
   - Orange
+  - Apple
+  - Strawberry
   layers:
   - Default
   - TransparentFX
