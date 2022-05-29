@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 93dce27340a57b646830eb2690b959cc
+<<<<<<< HEAD:Assets/Scripts/CollisionAnimation.cs.meta
+guid: 76bbda1d9079c8c4c875818a509d264a
+=======
+guid: bb96e2315b907d648be9c4546e6c8d80
+>>>>>>> master:Assets/Scripts/Bullet.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
