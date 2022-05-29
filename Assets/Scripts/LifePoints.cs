@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class LifePoints : MonoBehaviour
 {
-    private int lifePoints = 5;
+    public int lifePoints { get; private set; }
     [SerializeField] private Text lifePointsText;
 
-    private int highScore = 0;
+    public int highScore { get; private set; }
     [SerializeField] private Text highScoreText;
     
     private void Start()
     {
+        lifePoints = 5;
         lifePointsText.text = "Life Points: " + lifePoints;
         highScoreText.text = "Highscore: " + highScore;
     }
