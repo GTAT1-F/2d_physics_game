@@ -58,5 +58,59 @@ public class LifePoints : MonoBehaviour
             highScore -= 25;
             highScoreText.text = "Highscore: " + highScore;
         }
+        
+        else if (col.gameObject.CompareTag("FallingBlock"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        
+        else if (col.gameObject.CompareTag("SawHori"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        
+        else if (col.gameObject.CompareTag("SawVer"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        
+        else if (col.gameObject.CompareTag("SpikedBall"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        
+        else if (col.gameObject.CompareTag("Fire"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        
+        else if (col.gameObject.CompareTag("Spike"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
     }
 }
