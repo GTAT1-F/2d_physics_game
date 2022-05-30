@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public GameObject scoresMenuUI;
+    public GameObject gameOverPanelUI;
+
 
     void Update()
     {
@@ -20,6 +22,12 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+    }
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+        //SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void Resume()
     {

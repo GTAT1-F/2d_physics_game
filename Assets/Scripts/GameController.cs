@@ -12,22 +12,29 @@ public class GameController : MonoBehaviour
     private bool isGameOver;
     private bool playerVictory;
     private bool hasBeenEnded;
+    public GameObject gameOverPanel;
+    public GameObject gameWinPanel;
 
     // Update is called once per frame
     void Update()
     {
         CheckForGameEnd();
-        if (isGameOver && !hasBeenEnded) EndGame();
+        if (isGameOver && !hasBeenEnded)
+        {
+            EndGame();
+        }
+        if (isGameOver)
+        {
+            Time.timeScale = 0f;
+        } else {
+            Time.timeScale = 1f;
+        }
     }
 
     private void EndGame()
     {
         // Save the score
         scoreManager.AddCurrentScore();
-
-        // Show Game Over screen
-        pauseMenu.Pause();
-
         hasBeenEnded = true;
     }
 
@@ -38,12 +45,16 @@ public class GameController : MonoBehaviour
         {
             isGameOver = true;
             playerVictory = false;
+            // displays game over screen
+            gameOverPanel.SetActive(true);
         }
         // Check boss's health
         if (boss.Health <= 0)
         {
             isGameOver = true;
             playerVictory = true;
+            gameWinPanel.SetActive(true);
         }
     }
+
 }

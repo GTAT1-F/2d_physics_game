@@ -62,10 +62,14 @@ namespace StateMachine
 
         public bool Trigger(Transition transition)
         {
+            if (stateToTransitions == null) 
+            {
+                return false;
+            }
             var possibleTransitions = stateToTransitions[CurrentState];
             var concreteTransition = possibleTransitions.FirstOrDefault(x => x.transition.Equals(transition));
             if(concreteTransition == null) { return false; }
-            Debug.Log($"[{concreteTransition.from.Name}].OnExit() => [{concreteTransition.to.Name}].OnEnter()");
+            // Debug.Log($"[{concreteTransition.from.Name}].OnExit() => [{concreteTransition.to.Name}].OnEnter()");
             concreteTransition.from.OnExit(transition);
             CurrentState = concreteTransition.to;
             concreteTransition.to.OnEnter(transition);
