@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private int speed = 50;
     [SerializeField] private GameObject impactEffect;
-    [SerializeField] private int damage = 10;
+    [SerializeField] public int damage { get; private set; } = 10;
     // a prefab that speeds up the player's speed
     [SerializeField] private GameObject speedUpPrefab;
     // prefab that reduces a player's life
@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
         Boss boss = col.GetComponent<Boss>();
         if (boss != null)
         {
-            boss.TakeDamage(damage);
+            //boss.TakeDamage(damage);
         }
         Debug.Log(col.name);
         Instantiate(impactEffect, transform.position, transform.rotation);

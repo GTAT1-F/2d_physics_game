@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using bsm = BossStateMachine;
 using System;
 
@@ -9,23 +8,26 @@ using System;
 public class Boss : MonoBehaviour
 {
     [SerializeField] private GameObject spikedBallPrefab;
+    [SerializeField] private GameObject deathPrefab;
     private Transform bossTransform => transform;
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxCollider;
     private SpriteRenderer spriteRenderer;
+    public Color spriteColor = Color.white;
 
     [SerializeField] private Transform[] leftAttackPoints;
     [SerializeField] private Transform[] rightAttackPoints;
 
-    [SerializeField] public Sprite[] landingAnimationSprites;
-    [SerializeField] private int spriteIndex = 0;
+    [SerializeField] private Transform playerTransform;
+
+    [SerializeField] private Healthbar healthbar;
+    private const int MAX_HEALTH = 100;
     public int Health { get => health ; private set => health = value; }
     [SerializeField] private int health;
 
     [SerializeField] public float ballForce;
     private bool isGrounded;
 
-    [SerializeField] TextMeshPro damageText;
     [SerializeField] bsm.BossStateMachine stateMachine;
 
     public List<string> possibleActions;
@@ -39,6 +41,7 @@ public class Boss : MonoBehaviour
     
     private int groundLayer; 
     private int groundLayerMask;
+    private int playerLayer;
     private int playerAttackLayer;
     private int playerLayerMask;
 
@@ -48,8 +51,8 @@ public class Boss : MonoBehaviour
     void Start()
     {
         timeRemaining = 0.5f;
-        health = 50;
-        ballForce = 100f;
+        health = MAX_HEALTH;
+        ballForce = 150f;
         attackDuration = 8f;
         rigidBody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -60,7 +63,9 @@ public class Boss : MonoBehaviour
         groundLayer = LayerMask.NameToLayer("Ground");
         groundLayerMask = LayerMask.GetMask(new string[] {"Ground"});
         playerAttackLayer = LayerMask.NameToLayer("PlayerAttacks");
+        playerLayer = LayerMask.NameToLayer("Player");
         playerLayerMask = LayerMask.GetMask(new string[] {"Player"});
+        healthbar.UpdateHealthBar(MAX_HEALTH, health);
     }
 
     // Update is called once per frame
@@ -77,7 +82,7 @@ public class Boss : MonoBehaviour
         }
         else
         {
-            if (health > 25)
+            if (health > MAX_HEALTH / 2)
             {
                 stateMachine.Trigger(bsm.BossTransitions.AttackPhase1);
             }
@@ -106,8 +111,7 @@ public class Boss : MonoBehaviour
         {
             if (currentAction != null)
             {
-                Debug.LogWarning("stopping all coroutines");
-                StopAllCoroutines();
+                foreach (string action in possibleActions) StopCoroutine(action);
             }
             if (actionsCount > 0)
             {
@@ -123,12 +127,40 @@ public class Boss : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject go = collision.gameObject;
+        var bullet = go.GetComponent<Bullet>();
 
         // Take damage if collision was with player bullet
         if (go.layer == playerAttackLayer)
         {
-            StartCoroutine(TakeDamage(1)); // TakeDamage(player.getDamage())
+           StartCoroutine(TakeDamage(bullet.damage));
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       if(collision.gameObject.layer == playerLayer)
+       {
+            StartCoroutine(MoveUp(5f));
+       }
+    }
+    private IEnumerator TakeDamage(int damage)
+    {
+        spriteRenderer.color = new Color(1, 0, 0, 0.3f);
+        if(health - damage <= 0)
+        {
+            healthbar.UpdateHealthBar(MAX_HEALTH, health - damage);
+            Instantiate(deathPrefab, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(.4f);
+            health -= damage;
+        }
+        else
+        {
+            health -= damage;
+        }
+        healthbar.UpdateHealthBar(MAX_HEALTH, health);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = spriteColor;
+        yield return null;
     }
 
     // Instantiates a spiked ball at the center attack point on each side
@@ -145,32 +177,19 @@ public class Boss : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator TakeDamage(int damage)
-    {
-        Health -= damage;
-
-        damageText.color = Color.red;
-        damageText.text = damage.ToString();
-
-        yield return new WaitForSeconds(0.5f);
-
-        damageText.color = Color.green;
-        damageText.text = health.ToString();
-    }
-
     // Boss moves up and does a ball attack when it lands
     private IEnumerator UpDownAttack()
     {
         while (true)
         {
-            yield return StartCoroutine(MoveUp(10f));
+            yield return StartCoroutine(MoveUp(6f));
             yield return StartCoroutine(WaitToLand());
             yield return StartCoroutine(BallAttack());
             yield return null;
         }  
     }
 
-    // Sends out balls from the bottom, then center, then top attack points
+    // Shoots spiked balls at the player on the side the player is on and horizontally otherwise
     private IEnumerator GroundedAttack()
     {
         while (true)
@@ -179,11 +198,23 @@ public class Boss : MonoBehaviour
             {
                 for (int i = 0; i < leftAttackPoints.Length; i++)
                 {
-                    var ball = Instantiate(spikedBallPrefab, leftAttackPoints[i]);
-                    ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
-                    ball = Instantiate(spikedBallPrefab, rightAttackPoints[i]);
-                    ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
-                    yield return new WaitForSeconds(2f);
+                    Vector2 direction = playerTransform.position - transform.position;
+
+                    if(direction.x < 0) // Player is to the left
+                    {
+                        // Shoot at the player on the left and to the side on the right
+                        yield return StartCoroutine(ShootAtPlayer(leftAttackPoints[i]));
+                        var ball = Instantiate(spikedBallPrefab, rightAttackPoints[i]);
+                        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                    }
+                    else // Player is to the right
+                    {
+                        // Shoot at the player on the right and to the side on the left
+                        yield return StartCoroutine(ShootAtPlayer(rightAttackPoints[i]));
+                        var ball = Instantiate(spikedBallPrefab, leftAttackPoints[i]);
+                        ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(ballForce * ball.transform.right.x, 0));
+                    }
+                    yield return new WaitForSeconds(1f);
                 }
             }
             yield return null;
@@ -209,17 +240,26 @@ public class Boss : MonoBehaviour
 
             if (distanceToGround < 5f)
             {
-                yield return StartCoroutine(MoveUp(15f));
+                yield return StartCoroutine(MoveUp(10f));
             }
             else
             {
                 StopAllCoroutines();
-                yield return StartCoroutine(MoveDown(-20f));
+                yield return StartCoroutine(MoveDown(-25f));
             }
             yield return null;
         }
     }
 
+    // Shoots a spiked ball from the attack point at the player
+    private IEnumerator ShootAtPlayer(Transform attackPoint)
+    {
+        Vector2 direction = playerTransform.position - attackPoint.position;
+        direction.Normalize();
+        var ball = Instantiate(spikedBallPrefab, attackPoint);
+        ball.GetComponent<Rigidbody2D>().AddForce(ballForce * direction);
+        yield return null;
+    }
     private IEnumerator MoveUp(float force)
     {
         while (isGrounded)
