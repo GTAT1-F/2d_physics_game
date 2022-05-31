@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private Boss boss;
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private PauseMenu pauseMenu;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Animator anim;
 
     private bool isGameOver;
     private bool playerVictory;
@@ -45,9 +47,11 @@ public class GameController : MonoBehaviour
         {
             isGameOver = true;
             playerVictory = false;
-            // displays game over screen
-            gameOverPanel.SetActive(true);
-        }
+            player.GetComponent<PlayerDeath>().Die();
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Dying"))
+                // displays game over screen
+                gameOverPanel.SetActive(true);
+            }
         // Check boss's health
         if (boss.Health <= 0)
         {
