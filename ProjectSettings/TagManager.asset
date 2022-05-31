@@ -11,6 +11,12 @@ TagManager:
   - Orange
   - Apple
   - Strawberry
+  - FallingBlock
+  - SawHori
+  - SawVer
+  - SpikedBall
+  - Fire
+  - Spike
   layers:
   - Default
   - TransparentFX
