@@ -8,7 +8,7 @@ public class LifePoints : MonoBehaviour
     public int lifePoints { get; private set; }
     [SerializeField] private Text lifePointsText;
 
-    public int highScore { get; private set; }
+    public int highScore;
     [SerializeField] private Text highScoreText;
     
     private void Start()
@@ -105,6 +105,14 @@ public class LifePoints : MonoBehaviour
         }
         
         else if (col.gameObject.CompareTag("Spike"))
+        {
+            --lifePoints;
+            lifePointsText.text = "Life Points:" + lifePoints;
+
+            highScore = -5;
+            highScoreText.text = "Highscore: " + highScore;
+        }
+        else if (col.gameObject.CompareTag("Boss"))
         {
             --lifePoints;
             lifePointsText.text = "Life Points:" + lifePoints;

@@ -55,6 +55,7 @@ public class GameController : MonoBehaviour
         // Check boss's health
         if (boss.Health <= 0)
         {
+            lp.highScore += 50;
             isGameOver = true;
             playerVictory = true;
             gameWinPanel.SetActive(true);

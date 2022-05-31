@@ -11,7 +11,6 @@ namespace BossStateMachine
     public class DeathHandler : StateHandler
     {
         [SerializeField] private Boss boss;
-        [SerializeField] private GameObject prefab;
 
         private void Awake()
         {
@@ -19,12 +18,13 @@ namespace BossStateMachine
         }
         public override void OnEnter<T>(T transition)
         {
-            Instantiate(prefab, boss.transform.position, Quaternion.identity);
+            GameObject.Destroy(boss.gameObject);
+         
         }
 
         public override void OnExit<T>(T transition)
         {
-            GameObject.Destroy(boss.gameObject);
+ 
         }
     }
 }

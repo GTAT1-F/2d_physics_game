@@ -23,9 +23,10 @@ namespace BossStateMachine
             boss.attackDuration = 5f;
             boss.timeRemaining = 0.5f;
             // Set the speed of the ball
-            boss.ballForce = 200f;
+            boss.ballForce = 150f;
             // Change color of sprite
-            spriteRenderer.color = new Color(0.7f, 0.55f, 0.55f);
+            boss.spriteColor = new Color(0.7f, 0.55f, 0.55f);
+            spriteRenderer.color = boss.spriteColor;
             // Set the attacks that are possible in this state
             boss.possibleActions.Add("GroundedAttack");
             boss.possibleActions.Add("SlamAttack");

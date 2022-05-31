@@ -12,7 +12,7 @@ public class Trampolin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trampolineForce = 10f;
+        trampolineForce = 14f;
         sr = GetComponent<SpriteRenderer>();
     }
 
